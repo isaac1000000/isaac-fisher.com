@@ -3,6 +3,8 @@ h1 {
 }
 main {
 	font-size: 22px;
+}
+#content {
 	width: 400px;
 	position: relative;
 	left: 250px;
@@ -32,4 +34,10 @@ main {
 	left: 100px;
 	top: 450px;
 	z-index: 3;
+}
+#sotm {
+	position: relative;
+	float: right;
+	bottom: 500px;
+	right: 160px;
 }
