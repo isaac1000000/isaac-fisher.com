@@ -1,3 +1,35 @@
 h1 {
 	size: 15px;
 }
+main {
+	font-size: 22px;
+	width: 400px;
+	position: relative;
+	left: 250px;
+	bottom: 200px;
+}
+#main-title {
+	font-size: 90px;
+	text-align: left;
+	position: relative;
+	left: 200px;
+}
+#title-bar ul {
+	display: table;
+	width: 100%;
+}
+#title-bar li {
+	display: table-cell;
+	vertical-align: top;
+}
+#main-img {
+	position: relative;
+	right: 100px;
+	z-index: 1
+}
+#black-box {
+	position: relative;
+	left: 100px;
+	top: 450px;
+	z-index: 3;
+}
