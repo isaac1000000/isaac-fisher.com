@@ -41,3 +41,9 @@ main {
 	left: 1025px;
 	bottom: 400px;
 }
+#sketch-caption {
+	position:relative;
+	left: 432px;
+	bottom: 190px;
+	width: 600px;
+}
