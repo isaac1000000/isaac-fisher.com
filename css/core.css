@@ -7,6 +7,7 @@ html {
 	overflow-x: hidden;
 }
 body {
+	max-width: 130rem;
 	height: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
