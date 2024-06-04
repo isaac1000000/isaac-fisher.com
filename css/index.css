@@ -7,7 +7,7 @@ main {
 #content {
 	width: 400px;
 	position: relative;
-	left: 150px;
+	left: 125px;
 	bottom: 200px;
 }
 #main-title {
@@ -15,7 +15,7 @@ main {
 	font-size: 90px;
 	text-align: left;
 	position: relative;
-	left: 325px;
+	left: 300px;
 }
 #title-bar ul {
 	display: table;
@@ -27,12 +27,12 @@ main {
 }
 #main-img {
 	position: relative;
-	right: 175px;
+	right: 200px;
 	z-index: 1
 }
 #black-box {
 	position: relative;
-	left: 25px;
+	left: 0px;
 	top: 450px;
 	z-index: 3;
 }
