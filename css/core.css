@@ -3,15 +3,15 @@
 }
 html {
 	height: 100%;
-	width: 100%;
 }
 body {
 	height: 100%;
-	width: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: "Brawler";
 	background-image: linear-gradient(to bottom right, #fcf0e1, #e9d5bc);
+	left-margin: 20%;
+	right-margin: 20%;
 }
 h1 {
 	margin: 0;
@@ -32,7 +32,8 @@ a:hover{
 }
 .navigation ul {
 	display: table;
-	width: 110em;
+	width: 95%;
+	min-width: 1200px;
 	table-layout: fixed;
 	overflow: hidden;
 	float: top;

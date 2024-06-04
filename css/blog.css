@@ -1,7 +1,7 @@
 main {
-	width: 36.81rem;
+	width: 33%;
 	position: relative;
-	left: 36.81rem;
+	left: 33%;
 }
 h2 {
 	margin-top: 0px;
@@ -11,7 +11,6 @@ h2 {
 h4 {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-right: 6.13rem;
 	text-align: left;
 }
 main > p {

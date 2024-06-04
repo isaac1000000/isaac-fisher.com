@@ -1,16 +1,15 @@
 table{
-	width: 73.62rem;
+	width: 70%;
 	overflow: hidden;
 	position: relative;
-	left: 18.4rem;
-	border-spacing: 1.23rem;
+	left: 15%;
+	border-spacing: .5rem;
 }
 .photos img {
-	width: 18.4rem;
+	max-width: 100%;
 	height: auto;
 }
 .caption{
-	padding: .61rem;
-	width: 17.18rem;
+	max-width: 100%;
 	text-align: left;
 }
