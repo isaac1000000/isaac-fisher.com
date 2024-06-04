@@ -15,7 +15,8 @@ main {
 	font-size: 5.52em;
 	text-align: left;
 	position: relative;
-	left: 17%;
+	left: 10%;
+	bottom: 30px;
 }
 #title-bar ul {
 	display: table;
