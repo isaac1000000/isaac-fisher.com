@@ -1,21 +1,21 @@
 h1 {
-	size: 15px;
+	size: .92em;
 }
 main {
-	font-size: 22px;
+	font-size: 1.35rem;
 }
 #content {
-	width: 400px;
+	width: 24.54rem;
 	position: relative;
-	left: 125px;
-	bottom: 185px;
+	left: 7.67rem;
+	bottom: 11.35rem;
 }
 #main-title {
 	font-family: "Brawler";
-	font-size: 90px;
+	font-size: 5.52em;
 	text-align: left;
 	position: relative;
-	left: 300px;
+	left: 18.4rem;
 }
 #title-bar ul {
 	display: table;
@@ -27,23 +27,23 @@ main {
 }
 #main-img {
 	position: relative;
-	right: 200px;
+	right: 12.5rem;
 	z-index: 1
 }
 #black-box {
 	position: relative;
-	left: 0px;
-	top: 450px;
+	left: 0em;
+	top: 27.6rem;
 	z-index: 3;
 }
 #sotm {
 	position: relative;
-	left: 1025px;
-	bottom: 450px;
+	left: 62.88rem;
+	bottom: 27.6rem;
 }
 #sketch-caption {
 	position:relative;
-	left: 432px;
-	bottom: 190px;
-	width: 600px;
+	left: 26.5rem;
+	bottom: 11.66rem;
+	width: 36.8rem;
 }

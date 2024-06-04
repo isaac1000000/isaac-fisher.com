@@ -1,20 +1,20 @@
 main {
-	width: 600px;
+	width: 36.81rem;
 	position: relative;
-	left: 600px;
+	left: 36.81rem;
 }
 h2 {
 	margin-top: 0px;
-	margin-bottom: 15px;
+	margin-bottom: .92rem;
 	text-align: left;
 }
 h4 {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-right: 100px;
+	padding-right: 6.13rem;
 	text-align: left;
 }
 main > p {
-	margin-top: 10px;
+	margin-top: .61rem;
 	text-align: left;
 }
