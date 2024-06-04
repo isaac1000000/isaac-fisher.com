@@ -11,6 +11,7 @@ main {
 	bottom: 200px;
 }
 #main-title {
+	font-family: "Brawler";
 	font-size: 90px;
 	text-align: left;
 	position: relative;
@@ -18,7 +19,7 @@ main {
 }
 #title-bar ul {
 	display: table;
-	width: 100%;
+	width: 120em;
 }
 #title-bar li {
 	display: table-cell;
@@ -38,5 +39,5 @@ main {
 #sotm {
 	position: relative;
 	left: 1025px;
-	bottom: 350px;
+	bottom: 400px;
 }

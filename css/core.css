@@ -2,11 +2,12 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: Times New Roman;
+	font-family: "Brawler";
 	background-color: #fcf0e1;
 }
 h1 {
 	margin: 0;
+	font-weight: normal;
 }
 ul {
 	list-style-type: none;
@@ -23,10 +24,11 @@ a:hover{
 }
 .navigation ul {
 	display: table;
-	width: 100%;
+	width: 110em;
 	table-layout: fixed;
 	overflow: hidden;
 	float: top;
+	padding-top: 5px;
 }
 .navigation li {
 	display: table-cell;
