@@ -1,9 +1,15 @@
 * {
 	box-sizing: border-box;
 }
+html {
+	height: 100%;
+}
 body {
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	font-family: "Brawler";
-	background-color: #fcf0e1;
+	background-image: linear-gradient(to bottom right, #fcf0e1, #e9d5bc);
 }
 h1 {
 	margin: 0;
