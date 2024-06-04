@@ -1,0 +1,9 @@
+#content {
+	width: 600px;
+	position: relative;
+	left: 600px;
+	text-align: center;
+}
+#content a:link {
+	text-decoration: underline;
+}

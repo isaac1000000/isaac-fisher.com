@@ -1,0 +1,16 @@
+table{
+	width: 1200px
+	overflow: hidden;
+	position: relative;
+	left: 300px;
+	border-spacing: 20px;
+}
+.photos img {
+	width: 300px;
+	height: auto;
+}
+.caption{
+	padding: 10px;
+	width: 280px;
+	text-align: justify;
+}
