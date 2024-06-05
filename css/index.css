@@ -1,54 +1,75 @@
 h1 {
 	size: .92em;
 }
+h3 {
+	margin-top: 0;
+}
 main {
 	font-size: 1.35rem;
+	max-width: 1200px;
+	margin: 0 auto;
 }
-#content {
-	width: 24.54rem;
-	position: relative;
-	left: 6.1%;
-	bottom: 13rem;
+ul {
+	padding-inline-start: 0;
+}
+#content p,h3 {
+	max-width: 24.54rem;
+}
+#content li{
+	width: 600px;
+	float: left;
 }
 #main-title {
 	font-family: "Brawler";
-	font-size: 5.52em;
+	font-size: 4em;
 	text-align: left;
 	position: relative;
-	left: 10%;
-	bottom: 30px;
+	left: 50px;
+	bottom: 50px;
 }
 #title-bar ul {
-	display: table;
-	width: 100%;
+	max-width: 1200px;
+	max-height: 400px;
 }
 #title-bar li {
-	display: table-cell;
+	float: left;
+	padding-left: 0;
 	vertical-align: top;
+	margin-top: 0px;
+	max-width: 400px;
+	max-height: 400px;
 }
 #main-img {
-	height: 36.8rem;
-	width: 36.8rem;
 	position: relative;
-	right: 35%;
+	max-width: 600px;
+	max-height: auto;
+	right: 200px;
 	z-index: 1
 }
-#black-box {
-	height: 36.8rem;
-	width: 36.8rem;
+#bbnc {
 	position: relative;
-	left: 0em;
-	top: 26.1rem;
+	top: 400px;
 	z-index: 3;
+	padding-left: 0;
 }
-#sotm {
-	position: relative;
-	left: calc(36.8rem + 115%);
-	bottom: 27.6rem;
+#bbnc img{
+	max-width: 400px;
+	max-height: auto;
 }
+#bbnc li {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+} 
 #sketch-caption {
-	position:relative;
-	left: 123%;
-	bottom: 15rem;
-	width: 36.8rem;
+	margin-top: 6px;
+}
+#main-title li{
+	margin: 0;
+	display: block;
+}
+#sotw li {
+	position: relative;
+	top: 220px;
+	left: 220px;
 }

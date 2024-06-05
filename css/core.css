@@ -4,21 +4,20 @@
 html {
 	height: 100%;
 	max-width: 100%;
+	min-width: 1200px;
 	overflow-x: hidden;
 }
 body {
-	max-width: 130rem;
+	min-width: 1200px;
 	height: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: "Brawler";
 	background-image: linear-gradient(to bottom right, #fcf0e1, #e9d5bc);
-	left-margin: 20%;
-	right-margin: 20%;
 }
 h1 {
-	margin: 0;
 	font-weight: normal;
+	margin: 0;
 }
 ul {
 	list-style-type: none;
@@ -46,7 +45,7 @@ a:hover{
 	display: table-cell;
 	width: 50%;
 	text-align: center;
-	font-size: 1.84em;
+	font-size: 36px;
 	font-color: black;
 }
 .current-page {
