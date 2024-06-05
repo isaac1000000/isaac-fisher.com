@@ -1,6 +1,6 @@
 h2 {
 	margin-top: 0px;
-	margin-bottom: .92rem;
+	margin-bottom: 15px;
 	text-align: left;
 }
 h4 {
@@ -9,7 +9,7 @@ h4 {
 	text-align: left;
 }
 main > p {
-	margin-top: .61rem;
+	margin-top: 10px;
 	text-align: left;
 }
 #content {
