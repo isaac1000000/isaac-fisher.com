@@ -22,6 +22,7 @@ h1 {
 }
 ul {
 	list-style-type: none;
+	padding-inline-start: 0;
 }
 a:link{
 	text-decoration: none;
@@ -36,8 +37,7 @@ a:hover{
 .navigation ul {
 	display: table;
 	height: 50px;
-	width: 100%;
-	min-width: 1200px;
+	width: 1200px;
 	table-layout: fixed;
 	overflow: hidden;
 	float: top;

@@ -9,11 +9,8 @@ main {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-ul {
-	padding-inline-start: 0;
-}
 #content p,h3 {
-	max-width: 24.54rem;
+	max-width: 375px;
 }
 #content li{
 	width: 600px;

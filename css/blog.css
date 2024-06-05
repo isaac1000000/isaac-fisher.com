@@ -1,7 +1,3 @@
-main {
-	max-width: 1200px;
-	margin: 0 auto;
-}
 h2 {
 	margin-top: 0px;
 	margin-bottom: .92rem;
@@ -15,4 +11,8 @@ h4 {
 main > p {
 	margin-top: .61rem;
 	text-align: left;
+}
+#content {
+	max-width: 600px;
+	margin: 0 auto;
 }

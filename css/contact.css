@@ -1,7 +1,7 @@
 #content {
-	width: 33%;
+	max-idth: 600px;
 	position: relative;
-	left: 33%;
+	margin: 0 auto;
 	text-align: center;
 }
 #content a:link {
