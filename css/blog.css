@@ -1,6 +1,5 @@
 main {
-	width: 33%;
-	position: relative;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 h2 {

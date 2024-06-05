@@ -2,14 +2,15 @@
 	box-sizing: border-box;
 }
 html {
-	height: 100%;
-	max-width: 100%;
 	min-width: 1200px;
+	width: 100%;
 	overflow-x: hidden;
+	margin: 0;
 }
 body {
-	min-width: 1200px;
-	height: 100%;
+	margin: 0 auto;
+	width: 1200px;
+	min-height: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: "Brawler";
@@ -34,21 +35,31 @@ a:hover{
 }
 .navigation ul {
 	display: table;
-	width: 95%;
+	height: 50px;
+	width: 100%;
 	min-width: 1200px;
 	table-layout: fixed;
 	overflow: hidden;
 	float: top;
-	padding-top: 5px;
+	padding-top: 10px;
+	margin-top: 10px;
+	align-self: center;
 }
 .navigation li {
 	display: table-cell;
-	width: 50%;
-	text-align: center;
-	font-size: 36px;
+	font-size: 18px;
 	font-color: black;
+}
+.navigation p {
+	margin-block-start: 0;
 }
 .current-page {
 	margin-top: 0;
 	color: gray;
+}
+.site-links {
+	width: 600px;
+	float: right;
+	display: flex;
+	justify-content: flex-end;
 }
