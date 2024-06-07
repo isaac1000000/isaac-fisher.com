@@ -52,7 +52,6 @@ a:hover{
 .navigation li {
 	display: table-cell;
 	font-size: 1.125rem;
-	font-color: black;
 }
 .navigation p {
 	margin-block-start: 0;
@@ -69,6 +68,7 @@ a:hover{
 .mobile-header {
 	width: 100%;
 	display: none;
+	z-index: 99;
 }
 .menu-dropdown {
 	position: flex;
@@ -78,11 +78,10 @@ a:hover{
 	display: none;
 	position: absolute;
 	top: 100%;
+	background-color: black;
+	text-align: left;
 	height: 100vh;
 	right: 0;
-	background-color: black;
-	z-index: 1;
-	text-align: left;
 }
 .menu-dropdown:hover .menu-content {
 	display: block;
@@ -90,32 +89,34 @@ a:hover{
 .menu-dropdown li {
 	display: inline;
 	height: 100%;
-	width: 4vh;
+	overflow: visible;
+	z-index: 99;
 }
 .menu-content a, .menu-content p {
 	display: block;
 	color: white;
 	margin-bottom: 0;
-	font-size: 3vw;
+	font-size: 1.5rem;
 	border-bottom: white solid 1px;
-	padding-left: 1vw;
+	padding-left: 4px;
 }
 .menu-content a:hover, .menu-content p {
 	background-color: white;
 	color: black;
 }
 .menu-btn img {
-	width: inherit;
-	height: auto;
+	width: auto;
+	height: 2.25rem;
 	background-color: black;
 }
 button.menu-btn {
 	padding: 0;
 	border: 0;
 	height: 100%;
-	width: inherit;
+	width: 2.25rem;
 	float: none;
 	background-color: black;
+	z-index: 99;
 }
 @media (max-width: 75rem){
 	main {
@@ -137,7 +138,7 @@ button.menu-btn {
 		margin-bottom: 0;
 	}
 	.navigation li {
-		font-size: 4vw;
+		font-size: 1rem;
 		margin: auto 3vw;
 	}
 	p.current-page {
@@ -150,7 +151,7 @@ button.menu-btn {
 		display: flex;
 		justify-content: space-between;
 		background-color: black;
-		height: 100%;
+		height: 3.5rem;
 	}
 	.mobile-header h1 {
 		color: white;

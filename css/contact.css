@@ -14,10 +14,9 @@
 	}
 	#content a, #content p, #content h2, #content{ 
 		position: relative;
-		z-index: 3;
+		z-index: 0;
 	}
 	#content {
-		max-width: 50%;
 		margin: 0 auto;
 	}
 }
