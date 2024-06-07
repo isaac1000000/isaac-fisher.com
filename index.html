@@ -11,58 +11,72 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap" rel="stylesheet">
 </head>
-  <body>
-    <div class="navigation">
-      <ul>
-        <div class="site-links">
-          <li><p class="current-page">Home</p></li>
-          <li><p>|</p></li>
-          <li><a href="html/Blog.html">Blog</a></li>
-          <li><p>|</p></li>
-          <li><a href="html/Portfolio.html">Portfolio</a></li>
-          <li><p>|</p></li>
-          <li><a href="html/Photos.html">Photos and Food</a></li>
-          <li><p>|</p></li>
-          <li><a href="files/FisherResumeForWebsite.pdf", target="_blank">Resume</a></li>
-          <li><p>|</p></li>
-          <li><a href="html/Contact.html">Contact</a></li>
-        </div>
-      </ul>
-    </div>
-    <main>
-    <div id="title-bar">
-      <ul>
-        <li>
-          <ul id="main-title">
-            <li><h1>&nbsp;&nbsp;<em>i</em>saac</h1></li>
-            <li><h1><em>fish</em>er</h1></li>
-          </ul>
-        </li>
-        <li>
-          <ul id="bbnc">
-            <li><img id="black-box" src="imgs/sketch.jpeg" alt="A stylish black box"></li>
-            <li><p id="sketch-caption">A sketch from my notebook last semester. I'll try to update this regularly.</p></li>
-          </ul>
-        </li>
-        <li><img id="main-img" src="imgs/self.jpg" alt="A nice picture of yours truly"></li>
-      </ul>
-    </div>
-      <div id="content">
-        <ul>
-          <li>
-            <h3>Currently reading:</h3>
-            <p>Anna Karenina by Tolstoy and Herrndorf by Tobias Rüther</p>
-            <h3>About me</h3>
-            <p>Hi, I'm Isaac. I'm a double major in computer science and German studies at NYU. I spend most of my time playing volleyball, cooking, reading German plays, and coding. Some of my favorite German authors are Walter Benjamin, Henrik Ibsen, and Christoph Schlingensief, but I read English books too. I've never done any web design ever but I'm building this website from scratch in HTML/CSS/JS, so please excuse any imperfections.  Feel free to contact me about any of the above, and enjoy the website!</p>
-          </li>
-          <li>          
-            <ul id="sotw">
-              <li><h3>Song of the week:</h3></li>
-              <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6MD8j7Z5xHkjxLIZej3t10?utm_source=generator&theme=0" width="350" height="100" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
-            </ul>
-          </li>
-        </ul>
+<body>
+  <div class="navigation">
+    <ul>
+      <div class="site-links">
+        <li><p class="current-page">Home</p></li>
+        <li><p>|</p></li>
+        <li><a href="html/Blog.html">Blog</a></li>
+        <li><p>|</p></li>
+        <li><a href="html/Portfolio.html">Portfolio</a></li>
+        <li><p>|</p></li>
+        <li><a href="html/Photos.html">Photos and Food</a></li>
+        <li><p>|</p></li>
+        <li><a href="files/FisherResumeForWebsite.pdf", target="_blank">Resume</a></li>
+        <li><p>|</p></li>
+        <li><a href="html/Contact.html">Contact</a></li>
       </div>
-    </main>
-  </body>
+      <div class="mobile-header">
+        <li><h1>IF</h1></li>
+        <div class="menu-dropdown">
+          <li><button class="menu-btn"><img src="imgs/menu.svg"></button></li>
+          <div class="menu-content">
+            <p>Home</p>
+            <a href="html/Blog.html">Blog</a>
+            <a href="html/Portfolio.html">Portfolio</a>
+            <a href="html/Photos.html">Photos and Food</a>
+            <a href="files/FisherResumeForWebsite.pdf", target="_blank">Download Resume (PDF)</a>
+            <a href="html/Contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <main>
+  <div id="title-bar">
+    <ul>
+      <li>
+        <ul id="main-title">
+          <li><h1>&nbsp;&nbsp;<em>i</em>saac</h1></li>
+          <li><h1><em>fish</em>er</h1></li>
+        </ul>
+      </li>
+      <li>
+        <ul id="bbnc">
+          <li><img id="black-box" src="imgs/sketch.jpeg" alt="A stylish black box"></li>
+          <li><p id="sketch-caption">A sketch from my notebook last semester. I'll try to update this regularly.</p></li>
+        </ul>
+      </li>
+      <li><img id="main-img" src="imgs/self.jpg" alt="A nice picture of yours truly"></li>
+    </ul>
+  </div>
+    <div id="main-content">
+      <ul>
+        <li>
+          <h3>Currently reading:</h3>
+          <p>Anna Karenina by Tolstoy and Herrndorf by Tobias Rüther</p>
+          <h3>About me</h3>
+          <p>Hi, I'm Isaac. I'm a double major in computer science and German studies at NYU. I spend most of my time playing volleyball, cooking, reading German plays, and coding. Some of my favorite German authors are Walter Benjamin, Henrik Ibsen, and Christoph Schlingensief, but I read English books too. I've never done any web design ever but I'm building this website from scratch in HTML/CSS/JS, so please excuse any imperfections.  Feel free to contact me about any of the above, and enjoy the website!</p>
+        </li>
+        <li>          
+          <ul id="sotw">
+            <li><h3>Song of the week:</h3></li>
+            <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6MD8j7Z5xHkjxLIZej3t10?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
 </html>

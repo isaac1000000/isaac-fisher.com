@@ -1,62 +1,61 @@
 h3 {
 	margin-top: 0;
+	font-size: 1.6rem;
 }
 main {
-	font-size: 22px;
-	max-width: 1200px;
-	margin: 0 auto;
+	font-size: 1.375rem;
+	width: 75rem;
 }
-#content p,h3 {
-	max-width: 375px;
+#main-content p,h3 {
+	width: 23.4375rem;
 }
-#content li{
-	width: 600px;
+#main-content li{
+	width: 37.5rem;
 	float: left;
 }
 #main-title {
 	font-family: "Brawler";
-	font-size: 87px;
+	font-size: 5.4375rem;
 	text-align: left;
 	position: relative;
-	left: 50px;
-	bottom: 50px;
+	left: 3.125rem;
+	bottom: 3.125remx;
 }
 #title-bar ul {
-	max-width: 1200px;
-	max-height: 400px;
+	max-width: 75rem;
+	max-height: 25rem;
 }
 #title-bar li {
 	float: left;
 	padding-left: 0;
 	vertical-align: top;
 	margin-top: 0px;
-	max-width: 400px;
-	max-height: 400px;
+	max-width: 25rem;
+	max-height: 25rem;
 }
 #main-img {
 	position: relative;
-	max-width: 600px;
+	max-width: 37.5rem;
 	max-height: auto;
-	right: 200px;
-	z-index: 1
+	right: 12.5rem;
+	z-index: 1;
 }
 #bbnc {
 	position: relative;
-	top: 400px;
-	z-index: 3;
+	top: 25rem;
+	z-index: 2;
 	padding-left: 0;
 }
 #bbnc img{
-	max-width: 400px;
-	max-height: auto;
+	max-width: 25rem;
 }
 #bbnc li {
 	display: block;
 	text-align: center;
-	font-size: 14px;
+	font-size: .875rem;
 } 
 #sketch-caption {
-	margin-top: 6px;
+	margin-top: .375rem;
 }
 #main-title li{
 	margin: 0;
@@ -64,6 +63,81 @@ main {
 }
 #sotw li {
 	position: relative;
-	top: 220px;
-	left: 220px;
+	top: 13.75rem;
+	left: 13.75rem;
+}
+#sotw iframe {
+	width: 21.875rem;
+	height: 6.25rem; 
+}
+@media (max-width: 75rem){
+	main {
+		width: 100%;
+		margin-top: 9rem;
+	}
+	h3 {
+		font-size: min(1.6rem, 4.83vw);
+	}
+	div#title-bar {
+		overflow: hidden;
+	}
+	#title-bar ul {
+		width: 80%;
+		max-height: 100%;
+		margin: 0 10%;
+		overflow: hidden;
+	}
+	#title-bar li {
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+		width: 100%;
+		text-align: center;
+	}
+	#main-title {
+		display: none;
+	}
+	#main-img {
+		max-width: 80%;
+		position: unset;
+	}
+	#bbnc {
+		position: unset;
+		display: none;
+	}
+	#bbnc img {
+		max-width: 70%;
+	}
+	#bbnc li {
+		font-size: min(.875rem, 3vw);
+	}
+	div#main-content {
+		overflow: hidden;
+	}
+	#main-content {
+		margin-top: 2rem;
+	}
+	#main-content ul {
+		width: 80%;
+		margin: 0 10%;
+	}
+	#main-content li {
+		clear: both;
+		width: 100%;
+		display: block;
+	}
+	#main-content p {
+		width: 100%;
+		font-size: min(1.375rem, 4vw);
+	}
+	#sotw li {
+		position: unset;
+	}
+	ul#sotw {
+		margin: 0 0;
+	}
+	#sotw iframe {
+		width: max(60%, 15rem);
+		height: 6.25rem;
+	}
 }

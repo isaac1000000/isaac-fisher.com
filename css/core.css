@@ -2,20 +2,24 @@
 	box-sizing: border-box;
 }
 html {
-	min-width: 1200px;
 	width: 100%;
+	min-height: 100%;
 	overflow-x: hidden;
 	margin: 0;
 }
 body {
 	margin: 0 auto;
-	width: 1200px;
+	max-width: 75rem;
 	min-height: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: "Brawler";
 	background-image: linear-gradient(to bottom right, #fcf0e1, #e9d5bc);
-	font-size: 18px;
+	font-size: 1.125rem;
+	overflow: auto;
+}
+main {
+	overflow: hidden;
 }
 h1 {
 	font-weight: normal;
@@ -37,18 +41,17 @@ a:hover{
 }
 .navigation ul {
 	display: table;
-	height: 50px;
-	width: 1200px;
+	height: 3.125rem;
+	width: 100%;
 	table-layout: fixed;
 	overflow: hidden;
-	float: top;
-	padding-top: 10px;
-	margin-top: 10px;
+	padding-top: .625rem;
+	margin-top: .625rem;
 	align-self: center;
 }
 .navigation li {
 	display: table-cell;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-color: black;
 }
 .navigation p {
@@ -59,8 +62,98 @@ a:hover{
 	color: gray;
 }
 .site-links {
-	width: 600px;
 	float: right;
 	display: flex;
 	justify-content: flex-end;
+}
+.mobile-header {
+	width: 100%;
+	display: none;
+}
+.menu-dropdown {
+	position: flex;
+	display: inline-block;
+}
+.menu-content {
+	display: none;
+	position: absolute;
+	top: 100%;
+	height: 100vh;
+	right: 0;
+	background-color: black;
+	z-index: 1;
+	text-align: left;
+}
+.menu-dropdown:hover .menu-content {
+	display: block;
+}
+.menu-dropdown li {
+	display: inline;
+	height: 100%;
+}
+.menu-content a, .menu-content p {
+	display: block;
+	color: white;
+	margin-bottom: 0;
+	font-size: 3vw;
+	border-bottom: white solid 1px;
+	padding-left: 1vw;
+}
+.menu-content a:hover, .menu-content p {
+	background-color: white;
+	color: black;
+}
+.menu-btn img {
+	width: 4vh;
+	height: 100%;
+	background-color: black;
+}
+button.menu-btn {
+	padding: 0;
+	border: 0;
+	height: 100%;
+	float: none;
+}
+@media (max-width: 75rem){
+	main {
+		margin-top: 9rem;
+		width: 100%;
+	}
+	.navigation {
+		width: 100%;
+		min-height: 4%;
+		position: fixed;
+	}
+	.navigation ul {
+		width: 100%;
+		min-height: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0;
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+	.navigation li {
+		font-size: 4vw;
+		margin: auto 3vw;
+	}
+	p.current-page {
+		display: inline;
+	}
+	.site-links {
+		display: none;
+	}
+	.mobile-header {
+		display: flex;
+		justify-content: space-between;
+		background-color: black;
+		height: 100%;
+	}
+	.mobile-header h1 {
+		color: white;
+	}
+	main {
+		margin-top: 5rem;
+	}
+
 }

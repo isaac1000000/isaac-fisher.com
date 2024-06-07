@@ -7,3 +7,19 @@
 #content a:link {
 	text-decoration: underline;
 }
+@media (max-width: 75rem){
+	main {
+		margin-top: 9rem;
+		width: 100%;
+	}
+	#content a, #content p, #content h2, #content{ 
+		position: relative;
+		z-index: 3;
+		pointer-events: none;
+	}
+	#content {
+		max-width: 50%;
+		margin: 0 auto;
+	}
+}
+}

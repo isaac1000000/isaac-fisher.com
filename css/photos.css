@@ -1,6 +1,8 @@
+main {
+	width: 75ren;
+}
 table{
-	width: 1200px;
-	border-spacing: 7px;
+	border-spacing: .4375rem;
 }
 .photos img {
 	max-width: 100%;
@@ -9,4 +11,14 @@ table{
 .caption{
 	max-width: 100%;
 	text-align: left;
+}
+@media (max-width: 75rem){
+	main {
+		margin-top: 9rem;
+		width: 100%;
+	}
+	td {
+		display: inline-block;
+		max-width: 60vh;
+	}
 }

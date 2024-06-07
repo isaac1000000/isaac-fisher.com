@@ -1,0 +1,9 @@
+main > p {
+	text-align: center;
+}
+@media (max-width: 75rem){
+	main {
+		margin-top: 9rem;
+		width: 100%;
+	}
+}
