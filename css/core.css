@@ -100,8 +100,8 @@ a:hover {
 	padding-left: 5rem;
 	text-align: center;
 }
-.site-links a, p {
-	padding: .25rem .5rem;
+.site-links a, .site-links p {
+	padding: .1rem .5rem;
 }
 .site-links a:hover {
 	background-color: dimgray;
