@@ -6,6 +6,8 @@ h2 {
 	margin-top: 0px;
 	margin-bottom: 1rem;
 	text-align: left;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
 }
 h4 {
 	margin-top: 0px;
@@ -18,6 +20,12 @@ main > p {
 }
 #content {
 	max-width: 37.5rem;
+}
+#content a:link {
+	text-decoration: underline;
+}
+.entry {
+	margin-bottom: 8rem;
 }
 @media (max-width: 75rem){
 	main {
