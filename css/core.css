@@ -105,8 +105,8 @@ a:hover{
 	color: black;
 }
 .menu-btn img {
-	width: 1.5rem;
-	height: 100%;
+	width: inherit;
+	height: auto;
 	background-color: black;
 }
 button.menu-btn {
@@ -115,6 +115,7 @@ button.menu-btn {
 	height: 100%;
 	width: inherit;
 	float: none;
+	background-color: black;
 }
 @media (max-width: 75rem){
 	main {
