@@ -34,16 +34,17 @@ div#pic-array {
 	margin: 0 auto;
 
 }
-#food img {
+#food img, a#food {
 	border-top-left-radius: 6.25rem;
 	border-bottom-left-radius: 6.25rem;
 	height: 25rem;
+	width: 25rem;
 	clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
 }
-#food img:hover {
+a#food:hover img {
 	filter: brightness(.5);
 }
-#food img:hover + #food-caption {
+a#food:hover #food-caption {
 	display: grid;
 }
 #food {
@@ -53,14 +54,15 @@ div#pic-array {
 #food-caption {
 	width: 25rem;
 }
-#film img{
+#film img, a#film{
 	height: 25rem;
+	width: 25rem;
 	clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
 }
-#film img:hover {
+a#film:hover img {
 	filter: brightness(.5);
 }
-#film img:hover + #film-caption {
+a#film:hover #film-caption {
 	display: grid;
 }
 #film {
@@ -70,19 +72,21 @@ div#pic-array {
 #film-caption {
 	width: 25rem;
 }
-#else img {
+#else img, a#else {
 	border-top-right-radius: 6.25rem;
 	border-bottom-right-radius: 6.25rem;
 	height: 25rem;
+	width: 25rem;
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%)
 }
-#else img:hover {
+a#else:hover img {
 	filter: brightness(.5);
 }
-#else img:hover + #else-caption {
+a#else:hover #else-caption {
 	display: grid;
 }
 #else {
+	width: 25rem;
 	grid-column: 7;
 	grid-row: 1;
 }
@@ -120,12 +124,14 @@ div#pic-array {
 		grid-template-rows: repeat(3, 100vw);
 
 	}
-	#pic-array img {
+	#pic-array img, #pic-array a {
 		clip-path: none;
 		border-radius: 0;
 		width: 100vw;
 		height: 100vw;
-		filter: brightness(50%);
+	}
+	#pic-array img {
+		filter: brightness(60%);
 	}
 	#pic-array h2 {
 		bottom: 60vw;
