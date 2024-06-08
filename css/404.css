@@ -1,0 +1,13 @@
+main > p {
+	text-align: center;
+}
+main > h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+@media (max-width: 75rem){
+	main {
+		margin-top: 9rem;
+		width: 100%;
+	}
+}
