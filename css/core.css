@@ -89,10 +89,6 @@ a:hover {
 	margin-block-start: 0;
 	margin-bottom: 0;
 }
-.current-page {
-	margin-top: 0;
-	color: gray;
-}
 .site-links {
 	width: 50%;
 	margin: auto 0;
@@ -107,6 +103,10 @@ a:hover {
 	background-color: dimgray;
 	border-radius: 1rem;
 	color: white;
+}
+a.current-page {
+	text-decoration: underline;
+	text-decoration-style: dotted;
 }
 .mobile-header {
 	width: 100%;
