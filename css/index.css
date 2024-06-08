@@ -6,12 +6,19 @@ main {
 	font-size: 1.375rem;
 	width: 75rem;
 }
+#main-content {
+	text-align: left;
+}
 #main-content p,h3 {
 	width: 23.4375rem;
 }
 #main-content li{
 	width: 37.5rem;
 	float: left;
+}
+#full-width, #full-width p {
+	width: 75rem;
+	display: block;
 }
 #main-title {
 	font-family: "Brawler";
@@ -34,6 +41,7 @@ main {
 	max-height: 25rem;
 }
 #main-img {
+	display: flex;
 	position: relative;
 	max-width: 37.5rem;
 	max-height: auto;
@@ -61,10 +69,13 @@ main {
 	margin: 0;
 	display: block;
 }
-#sotw li {
+ul#sotw {
 	position: relative;
-	top: 13.75rem;
-	left: 13.75rem;
+	top: 1rem;
+	left: 2rem;
+}
+#sotw li {
+	display: block;
 }
 #sotw iframe {
 	width: 21.875rem;
@@ -93,6 +104,7 @@ main {
 		max-height: 100%;
 		width: 100%;
 		text-align: center;
+		margin: 0 auto;
 	}
 	#main-title {
 		display: none;
@@ -100,6 +112,7 @@ main {
 	#main-img {
 		max-width: 80%;
 		position: unset;
+		margin: 0 auto;
 	}
 	#bbnc {
 		position: unset;
@@ -117,7 +130,7 @@ main {
 	#main-content {
 		margin-top: 2rem;
 	}
-	#main-content ul {
+	#main-content {
 		width: 80%;
 		margin: 0 10%;
 	}
@@ -130,11 +143,24 @@ main {
 		width: 100%;
 		font-size: min(1.375rem, 4vw);
 	}
+	#full-width, #full-width p {
+		width: 100%;
+		display: inline;
+	}
 	#sotw li {
 		position: unset;
+		width: 100%;
+	}
+	#sotw h3 {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 1rem;
 	}
 	ul#sotw {
-		margin: 0 0;
+		margin: 0 auto;
+		margin-bottom: 2rem;
+		left: 0;
 	}
 	#sotw iframe {
 		width: max(60%, 15rem);
