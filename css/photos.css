@@ -20,6 +20,8 @@ main > p {
 	line-height: 0;
 	border: .5rem solid black;
 	border-radius: 6.75rem;
+	box-shadow: -2px 5px 5px dimgray;
+
 }
 #pic-array h2 {
 	color: white;

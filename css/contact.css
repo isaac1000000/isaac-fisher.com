@@ -1,8 +1,16 @@
+main {
+	height: 70rem;
+}
 #content {
-	max-width: 600px;
+	width: 25rem;
+	height: 40rem;
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
+	border: .5rem solid black;
+	border-radius: 10px;
+	box-shadow: -2px 5px 5px dimgray;
+
 }
 #content a:link {
 	text-decoration: underline;

@@ -1,5 +1,9 @@
+body {
+	margin-bottom: 10rem;
+}
 main{
 	width: 37.5rem;
+	margin-top: 0px;
 }
 h2 {
 	margin-top: 0px;
@@ -24,7 +28,7 @@ main > p {
 	text-decoration: underline;
 }
 .entry {
-	margin-bottom: 8rem;
+	padding-top: 8rem;
 }
 @media (max-width: 75rem){
 	main {
