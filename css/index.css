@@ -68,6 +68,7 @@ h2 {
 	height: 28rem;
 	padding-bottom: 2rem;
 	border-bottom: 1px solid black;
+	text-align: center;
 }
 #post-box {
 	float: left;
