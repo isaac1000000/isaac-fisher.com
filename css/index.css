@@ -5,7 +5,11 @@ h3 {
 main {
 	margin-top: 16rem;
 	font-size: 1.375rem;
-	width: 75rem;
+	width: 77rem;
+	max-width: 77rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
 	margin-bottom: 16rem;
 	height: auto;
 }
@@ -204,6 +208,7 @@ a#photos-link:hover {
 #sotw iframe {
 	width: 21.875rem;
 	height: 6.25rem; 
+	border-radius: 10px;
 }
 @media (max-width: 75rem){
 	body {
@@ -213,9 +218,18 @@ a#photos-link:hover {
 		width: 100%;
 		margin-top: 9rem;
 		height: auto;
+		padding: 0;
+		padding-bottom: 17vw;
+	}
+	#main-title {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 10rem;
 	}
 	#main-desc {
 		border: 0;
+		width: 90%;
+		margin: 0 auto;
 	}
 	#sketch {
 		display: none;
@@ -257,12 +271,14 @@ a#photos-link:hover {
 		margin-top: 2rem;
 	}
 	#post-box a {
-		width: 50vw;
+		width: 60vw;
 		height: auto;
 		display: block;
 		margin: 0 auto;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+		font-size: 2rem;
 		float: none;
+		line-height: 1;
 	}
 	#portfolio-desc {
 		display: none;
@@ -274,6 +290,8 @@ a#photos-link:hover {
 		margin: 0 10%;
 		text-align: center;
 		height: auto;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
 	}
 	#portfolio-box {
 		justify-content: space-around;
