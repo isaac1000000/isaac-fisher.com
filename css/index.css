@@ -312,6 +312,7 @@ a#photos-link:hover {
 		box-shadow: none;
 		line-height: 1;
 		display: block;
+	    box-shadow: -2px 5px 5px dimgray;	
 	}
 	#project-box #text:hover {
 		display: none;
