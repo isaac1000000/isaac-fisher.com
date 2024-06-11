@@ -17,12 +17,6 @@ h2 {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-#name-title {
-	text-decoration: underline;
-	text-decoration-thickness: .25rem;
-	text-decoration-style: wavy;
-	text-decoration-color: red;
-}
 #main-title {
 	font-size: 6rem;
 	text-align: left;
