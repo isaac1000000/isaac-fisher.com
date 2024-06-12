@@ -1,5 +1,72 @@
-main > p {
+main {
+	padding: 0 2rem;
+	width: 79rem;
+	max-width: 79rem;
+	line-height: 1.15;
+}
+.box-text a:link {
+	text-decoration: underline;
+}
+h3 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+	float: right;
 	text-align: center;
+	width: 25rem;
+	margin: 0;
+}
+main p {
+	font-size: 1.25rem;
+}
+#hint-container {
+	height: auto;
+	width: 100%;
+}
+.box {
+	border-bottom: 1px solid black;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	height: 29rem;
+}
+.box img {
+	width: 25rem;
+	height: 25rem;
+	background-color: white;
+	border-radius: 10px;
+	border: .5rem solid black;
+	box-shadow: -2px 5px 5px dimgray;
+}
+.box img:hover {
+	filter: brightness(80%);
+	box-shadow: none;
+}
+.box-text {
+	width: 47rem;
+	height: 100%;
+}
+.text-right img {
+	float: left;
+	margin-right: 3rem;
+}
+.text-right .box-text {
+	text-align: right;
+	float: right;
+	padding-left: 3rem;
+	border-left: 1px solid black;
+}
+.text-left img {
+	float: right;
+	margin-left: 3rem;
+}
+.text-left .box-text {
+	text-align: left;
+	float: left;
+	padding-right: 3rem;
+	border-right: 1px solid black;
 }
 @media (max-width: 75rem){
 	main {
