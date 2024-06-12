@@ -73,4 +73,37 @@ main p {
 		margin-top: 9rem;
 		width: 100%;
 	}
+	h5 {
+		width: 100%;
+		display: inline-block;
+	}
+	#hint-container {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.box {
+		display: block;
+		height: auto;
+	}
+	.text-left .box-text, .text-right .box-text{
+		width: 90%;
+		padding: 0;
+		border: 0;
+	}
+	.box-text {
+		margin: 0 5%;
+	}
+	.box img {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+	.box a:not(.box-text a) {
+		width: 70%;
+		max-width: 25rem;
+		margin: 0 auto;
+		display: block;
+	}
 }
