@@ -13,6 +13,7 @@ main {
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
+	margin-bottom: 1rem;
 }
 .one-third {
 	width: 23rem;
