@@ -1,0 +1,33 @@
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+#page-heading {
+	width: 100%;
+	font-weight: normal;
+}
+.pic-box {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+.one-third {
+	width: 23rem;
+}
+.two-thirds {
+	width: 48rem;
+}
+.one-half {
+	width: 35.5rem;
+}
+.whole {
+	width: 73rem;
+}
+.pic-box img {
+	width: inherit;
+	height: auto;
+	border-radius: 10px;
+	border: .5rem solid black;
+	box-shadow: -2px 5px 5px dimgray;
+}
