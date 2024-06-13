@@ -6,6 +6,8 @@ main {
 #page-heading {
 	width: 100%;
 	font-weight: normal;
+	font-size: 3rem;
+	text-align: right;
 }
 .pic-box {
 	display: inline-block;
