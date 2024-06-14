@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Fisher - Portfolio/Dictionfairy</title>
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/core.css">
+  <link rel="stylesheet" href="../../css/project-core.css">
+  <script src="../../js/project.js"></script>  
+  <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navigation">
+    <div class="desktop-header">
+      <li><h1>if</h1></li>
+      <div class="site-links">
+        <li>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../Blog.html">Blog</a></li>
+            <li><a href="../Portfolio.html"  class="current-page">Portfolio</a></li>
+            <li><a href="../Photos.html">Photos</a></li>
+            <li><a href="../../files/FisherResumeForWebsite.pdf", target="_blank">Resume</a></li>
+            <li><a href="../Contact.html">Contact</a></li>
+          </ul>
+        </li>
+      </div>
+    </div>
+    <div class="mobile-header">
+      <li><h1>if</h1></li>
+      <div class="menu-dropdown">
+        <li><button class="menu-btn"><img src="../../imgs/menu.svg" width="800" height="800"></button></li>
+        <div class="menu-content">
+          <a href="../../index.html">Home</a>
+          <a href="../Blog.html">Blog</a>
+          <a href="../Portfolio.html">Portfolio</a>
+          <a href="../Photos.html">Photos and Food</p>
+          <a href="../../files/FisherResumeForWebsite.pdf", target="_blank">Download Resume (PDF)</a>
+          <a href="../Contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <h1>Dictionfairy</h1>
+    <h2>Summer 2024 - <a href="https://github.com/isaac1000000/dictionfairy" target="_blank">https://github.com/isaac1000000/dictionfairy</a> - Docs to come</h2>
+    <img src="../../imgs/df-icon-transparent.png" alt="dictionfairy logo" id="project-logo">
+    <p class="main-text">
+      Dictionfairy solves a simple problem. When I'm reading something, I may need to look up a word. But then I'd have to open a new tab (or, even worse, a whole browser!), navigate the dictionary, then <em>finally</em> search my word. But not anymore - Dictionfairy hangs around above other tabs and waits for a hotkey. Depending on the hotkey, you'll get instant results for either the word you've already selected or the next word you click on your screen. It's that simple. You can choose the dictionary you'd like to use for your words - as of right now, Dictionfairy comes with support for dwds.de (de-de), leo.org (de-en), WordReference.com (fr-en), and Merriam-Webster (en-en). The app also includes functionality for configuring your preferred dictionary if you'd like to get results in a language I haven't added yet. You'll find instructions for this (and more!) in the docs and can download Dictionfairy from the GitHub link above.
+    </p>    
+    <div id="related-posts">
+      <h3>Related Posts</h3>
+      <div id="related-links">
+        <a href="../../html/Blog.html#lots-and-lots-of-css">Lots and Lots of CSS</a>
+      </div>
+    </div> 
+    <p class="main-text">
+      I built Dictionfairy in Python using PyQt6 to develop the desktop app and Selenium for webscraping. It's a bread-and-butter webscraping project that solves an actual problem that I have, and with the customizable dictionary feature, it should be applicable to anyone who's learning a language or just uses a dictionary often. Most of the challenge of this project was scalability. I knew that if I didn't start planning ahead from zero I'd quickly end up with a mess of barely functional component parts. The approach I took was calculated, and I focused on making sure each part of the project had clear pipelines for input and output. This ensured that I could effectively merge everything into a reliable and clean product. The other benefit was how relatively simple it was to allow user configuration for custom dictionaries, where all that's needed is a website link and a hint for what to look for. Above all, I've explored the way that systems are designed from the ground up in this project.
+    </p>
+  </main>
+</body>
+</html>

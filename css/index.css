@@ -126,6 +126,7 @@ a#third-recent-post {
 }
 #post-box a:hover {
 	box-shadow: none;
+	background-color: #e0cfba;
 }
 #blog-desc {
 	width: 28rem;

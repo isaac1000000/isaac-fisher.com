@@ -1,0 +1,75 @@
+main {
+	margin-bottom: 10rem;
+}
+main h1 {
+	font-size: 9rem;
+}
+main h2 {
+	text-align: center;
+}
+main a:link {
+	text-decoration: underline;
+}
+#project-logo {
+	background-color: white;
+	width: 25rem;
+	float: left;
+	margin: 0 2rem;
+	border: .5rem solid black;
+	border-radius: 10px;
+	box-shadow: -2px 5px 5px dimgray;
+}
+#related-posts {
+	width: 17rem;
+	float: right;
+	text-align: center;
+	margin: 1rem 2rem;
+	border: .5rem solid black;
+	border-radius: 10px;
+	box-shadow: -2px 5px 5px dimgray;
+}
+#related-links {
+	overflow-y: scroll;
+	max-height: 15rem;
+ 	margin-right: 1px;	
+ 	padding-left: 9px;
+}
+#related-links::-webkit-scrollbar { 
+	width: 8px;
+	background-color: transparent;
+}
+#related-links::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 100px;
+	box-shadow: -1px 2px 2px dimgray;
+
+}
+#related-links::-webkit-scrollbar-button {
+	height: .125rem;
+}
+#related-posts a:hover {
+	box-shadow: none;
+	color: black; 
+	background-color: #e0cfba;
+}
+#related-posts h3 {
+	margin: 0;
+	padding: 1rem 0;
+	background-color: black;
+	color: white;
+}
+#related-posts a {
+	display: block;
+	padding: 1rem 0;
+	margin: .125rem .125rem;
+	border-radius: 10px;
+	border: .25rem solid black;	
+	box-shadow: -2px 5px 5px dimgray;
+	text-decoration: none;
+}
+.main-text {
+	text-align: left;
+	margin: 0;
+	margin-bottom: 2rem;
+	font-size: 1.625rem;
+}
