@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isaac Fisher - Portfolio/isaacfisher.com</title>
+  <title>Isaac Fisher - Portfolio/2048 Simulator</title>
   <link rel="stylesheet" href="../../css/normalize.css">
   <link rel="stylesheet" href="../../css/core.css">
   <link rel="stylesheet" href="../../css/project-core.css">
@@ -43,22 +43,20 @@
     </div>
   </div>
   <main>
-    <h1>isaac-fisher.com</h1>
-    <h2>Summer 2024 - <a href="https://github.com/isaac1000000/isaac-fisher.com" target="_blank">https://github.com/isaac1000000/isaac-fisher.com</a></h2>
-    <img src="../../imgs/iflogo.JPG" alt="if logo" id="project-logo">
+    <h1>2048 Simulator</h1>
+    <h2>Spring 2023 - <a href="https://github.com/isaac1000000/2048simulator", target="_blank">https://github.com/isaac1000000/2048simulator</a> - Docs to come</h2>
+    <img src="../../imgs/2048.jpg" alt="2048 logo" id="project-logo">
     <p class="main-text">
-      It's my personal website. isaac-fisher.com will be the home of everything I'll write, build, draw, cook, or photograph for the foreseeable future. I'll be keeping a technical blog to discuss some of the projects I've been working on lately, and a photos page to post some of the food I've cooked or pictures I've taken. It's a portfolio, a diary, and a scrapbook. Check back every once in a while; I'll be making regular updates. I've had a blast designing it, and I'm excited to see where it goes.
+      I loved the 2048 game in high school. I never really paid attention to my high score or anything, but it was fun to press some buttons in a pattern and see what would come of it. There was a lot of not-so-accurate mythology to it: never go down, never go the same direction twice, etc. I tried it all, and never found success. This is my answer - a test framework for 2048 strategies. It's portable and easy to write patterns for, especially if you're like me and never looked at the board anyways. The best I found was left-up-right-up, which doubled the average of the next highest pattern. If you ever find a repetitive strategy that gets to 2048, let me know. I've not managed it yet.
     </p>    
     <div id="related-posts">
       <h3>Related Posts</h3>
       <div id="related-links">
-        <a href="../../html/Blog.html#time-to-get-technical">Time to Get Technical</a>
-        <a href="../../html/Blog.html#lots-and-lots-of-css">Lots and Lots of CSS</a>
-        <a href="../../html/Blog.html#discovering-web-design">Discovering Web Design</a>
+        <a></a>
       </div>
     </div> 
     <p class="main-text">
-      This website is built from the ground up. No libraries, no frameworks. It's hosted with GitHub pages and I'm hand-writing everything into it, from the blog posts to this description you're reading. I didn't have any experience in web development before starting, so this is my way of exploring the HTML/CSS/JS landscape without much pressure. If you notice any mistakes, let me know! I'd love to improve the site, and the best way to get guidance is from user feedback. You can find all the source code at the GitHub link above, or right in your browser. It's all there.
+      I built the framework in pure Java, and the test results and playable version of the game run on the command line. It's very malleable and supports "aware" strategies, meaning a pattern could make decisions based on the state of the board. The patterns I wrote are just samples and aren't meant to be optimal - I truly have no idea what a strategy for the game would even begin to look like. Maybe when I have some time I'll go back and take a look to see what I can do. Maybe it's an exercise left to the reader. Either way, this was a great experiment for writing tests and playing a bit with data manipulation that I hope to come back to sometime soon with the experience I have now.
     </p>
   </main>
 </body>
