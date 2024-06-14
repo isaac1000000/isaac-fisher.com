@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isaac Fisher - Portfolio/MyLikedLive</title>
+  <title>Isaac Fisher - Portfolio/Schlockfish</title>
   <link rel="stylesheet" href="../../css/normalize.css">
   <link rel="stylesheet" href="../../css/core.css">
   <link rel="stylesheet" href="../../css/project-core.css">
@@ -43,11 +43,11 @@
     </div>
   </div>
   <main>
-    <h1>My Liked, Live</h1>
-    <h2>Fall 2022 - <a href="https://github.com/isaac1000000/MyLikedLive", target="_blank">https://github.com/isaac1000000/MyLikedLive</a></h2>
-    <img src="../../imgs/yll.jpg" alt="my liked live logo" id="project-logo">
+    <h1>Schlockfish</h1>
+    <h2>Summer 2023 - <a href="https://github.com/isaac1000000/schlockfish", target="_blank">https://github.com/isaac1000000/schlockfish</a></h2>
+    <img src="../../imgs/schlockfish.jpg" alt="schlockfish logo" id="project-logo">
     <p class="main-text">
-      MyLikedLive is a tool that facilitates a Spotify login, then gathers your most recent artists and searches for their concerts. It was my first full-scale project, and a fun one to look back on. But I feel like I should clarify: at this point in time, Spotify only offered concert listings for one artist at a time on their artist page. I did beat them to this idea (I'm sure the feature was in development), and I did use it to find a Mild High Club concert once (it was great). If you want to see what I was doing when I was a complete amateur, check out the GitHub link above.
+      Schlockfish is the biggest failure I've ever produced and it's not even close. This is no surprise; I knew I'd be building a disaster from the start. Schlockfish was built in a week with no outside help or research, mostly during my shifts as a cashier at Staples. The project was designed conceptually to exercise two things. Firstly, my ability to problem-solve and meet a deadline. I wanted to be under pressure and alone, way over my head in a topic filled with nuance and challenge. Second, I needed a way to play with and apply the data structures I'd learned about in the spring semester. I knew I'd never get a chess engine to beat me naturally, but I did build a chess engine. And it beat me if I let it.
     </p>    
     <div id="related-posts">
       <h3>Related Posts</h3>
@@ -56,7 +56,7 @@
       </div>
     </div> 
     <p class="main-text">
-      I built MyLikedLive in Python with a rudimentary PyQt6 app and the TicketMaster API. It's simple, and that's ok - it was my first experience with APIs and a great introduction to reading docs and designing products. It's the project that started all the other projects, and the research skills that I learned from it have carried into every other program I've produced.
+      Schlockfish is built from nothing but pure Python. The engine is driven by a depth-first-search algorithm that ranks possible board states and makes a decision on the next move based on the results of optimal decisions from both sides. It operates now at a maximum depth of 3 - anything deeper never finished running on my machine. That is to say, if you can give the engine checkmate in 3, it'll win. If I had had it on hand, I would have let the program run and fill out best moves in a database on my Raspberry Pi to try to reach a higher depth. But I didn't, so enjoy the worst chess engine ever made in all its mistakes and failures.
     </p>
   </main>
 </body>
