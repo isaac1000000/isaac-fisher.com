@@ -131,9 +131,6 @@ a.current-page {
 	height: 100vh;
 	right: 0;
 }
-.menu-dropdown:hover .menu-content {
-	display: block;
-}
 .menu-dropdown li {
 	display: inline;
 	height: 100%;
@@ -153,6 +150,7 @@ a.current-page {
 	color: black;
 }
 .menu-btn img {
+	cursor: pointer;
 	width: 2.25rem;
 	height: 2.25rem;
 	background-color: black;
