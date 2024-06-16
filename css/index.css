@@ -249,12 +249,12 @@ a#photos-link:hover {
 	#pic-blox {
 		padding: 0;
 		border: 0;
-		width: 80vw;
+		width: 100%;
 		height: auto;
 	}
 	#main-img {
 		border: 0;
-		width: 80vw;
+		width: 100%;
 		right: 0;
 	}
 	#blog-desc {
@@ -331,6 +331,6 @@ a#photos-link:hover {
 		border: 0;
 	}
 	#sotw, #sotw iframe {
-		width: 80vw;
+		width: 100%;
 	}
 }

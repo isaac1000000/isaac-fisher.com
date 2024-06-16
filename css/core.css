@@ -126,10 +126,12 @@ a.current-page {
 	display: none;
 	position: absolute;
 	top: 100%;
+	padding-top: 10%;
 	background-color: black;
 	text-align: left;
 	height: 100vh;
 	right: 0;
+	width: 100%;
 }
 .menu-dropdown li {
 	display: inline;
@@ -140,10 +142,11 @@ a.current-page {
 .menu-content a, .menu-content p {
 	display: block;
 	color: white;
-	margin-bottom: 0;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	border-bottom: white solid 1px;
-	padding-left: 4px;
+	width: 50%;
+	margin: 0 auto;
+	padding: 1rem 0;
 }
 .menu-content a:hover, .menu-content p {
 	background-color: white;
@@ -163,6 +166,10 @@ button.menu-btn {
 	float: none;
 	background-color: black;
 	z-index: 1000;
+}
+.menu-content-icon {
+	float: right;
+	padding-right: 1rem;
 }
 @media (max-width: 75rem){
 	main {
