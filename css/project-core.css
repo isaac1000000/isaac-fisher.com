@@ -74,6 +74,10 @@ main a:link {
 	font-size: 1.625rem;
 }
 @media (max-width: 75rem){
+	main {
+		margin: inherit 5%;
+		max-width: 90%;
+	}
 	main h1 {
 		font-size: 13vw;
 		margin-left: 1rem;
@@ -86,13 +90,13 @@ main a:link {
 		margin-right: 2rem;
 	}
 	main img {
-		max-width: 100%;
+		max-width: 90%;
 		margin: 0;
 		padding: 0;
 	}
 	#related-posts {
 		max-width: 100%;
 		margin: 0;
-		margin-left: 2rem;
+		margin-left: 5%;
 	}
 }
