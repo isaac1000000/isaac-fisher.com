@@ -1,19 +1,32 @@
-function makeExpandable() {
-  var coll = document.getElementsByClassName("pic-box");
-  var i;
+function setupPicViewer() {
+  const picViewer = document.getElementById("pic-viewer");
+  picViewer.style.backgroundImage = "url('" + document.querySelector('.focused img').src + "')";
+  const picBoxElements = document.getElementsByClassName("pic-box");
+  var focusedPic = picBoxElements[0];
+  const picWidth = picBoxElements[1].offsetWidth;
+  var scrollDebounce = true;
+  var scrollEndDebounce = true;
 
+  picViewer.addEventListener("scroll", function(){
+    if (scrollEndDebounce) {
+      focusedPic.classList.remove("focused");
+    }
+  });
 
-  for (i = 0; i < coll.length; i++) {
-    var defaultWidth = coll[i].style.width;
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      if (this.classList.contains("active")){
-        this.style.width = "100%";
-        this.style.fontSize = "200%";
-      } else {
-        this.style.width = defaultWidth;
-        this.style.fontSize = "100%";
+  picViewer.addEventListener("scrollend", function(){
+    scrollEndDebounce = false;
+    setTimeout(function() {scrollEndDebounce = true; }, 500);
+    if (scrollDebounce) {
+      scrollDebounce = false;
+      // Distance from the left + the padding on the left of the boxes, selects from middle then divides to get index of pic
+      focusedIndex = Math.floor((picViewer.scrollLeft + (picViewer.offsetWidth / 2) - picWidth) / picWidth);
+      if (picViewer.scrollLeft < 100){
+        focusedIndex = 0;
       }
-    });
-  }
+      focusedPic = picBoxElements[focusedIndex];
+      focusedPic.classList.add("focused");
+      picViewer.style.backgroundImage = "url('" + document.querySelector('.focused img').src + "')";
+      setTimeout(function() {scrollDebounce = true; }, 500);
+    }
+  }); 
 }

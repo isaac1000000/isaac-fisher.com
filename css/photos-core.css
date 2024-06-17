@@ -1,7 +1,8 @@
 main {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+	max-width: 79rem;
+	width: 79rem;
+	padding: 0 2rem;
+	padding-bottom: 10rem;
 }
 #page-heading {
 	width: 100%;
@@ -9,28 +10,77 @@ main {
 	font-size: 3rem;
 	text-align: right;
 }
+#pic-viewer {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	height: 42rem;
+	scroll-snap-type: x mandatory;
+	border: .5rem solid black;
+	border-radius: 10px;
+	box-shadow: -2px 5px 5px dimgray;
+	background-position: center center;
+	position: relative;
+}
+#pic-boxes {
+	padding-left: 20rem;
+	height: 35rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+#pic-boxes p {
+	display: none;
+	color: white;
+}
 .pic-box {
 	display: inline-block;
+	scroll-snap-align: center;
 	text-align: center;
-	cursor: pointer;
-	margin-bottom: 1rem;
+	width: 19.75rem;
+	height: auto;
+	transition: height .4s, width .4s;
+	text-wrap: wrap;
 }
-.one-third {
-	width: 23rem;
+.focused {
+	height: 30rem !important;
+	width: auto;
+	margin-top: 0;
+	font-size: 1.5rem;
 }
-.two-thirds {
-	width: 48rem;
-}
-.one-half {
-	width: 35.5rem;
-}
-.whole {
-	width: 73rem;
+.focused p {
+	display: block !important;
+	background-color: black;
+	border-radius: 10px;
+	padding-bottom: .5rem;
+	padding-top: .5rem;
 }
 .pic-box img {
 	width: inherit;
-	height: auto;
+	height: inherit;
 	border-radius: 10px;
 	border: .5rem solid black;
-	box-shadow: -2px 5px 5px dimgray;
 }
+#pic-viewer::-webkit-scrollbar { 
+	padding-top: 5rem;
+	height: 1rem;
+	width: 80%;
+	background-color: transparent;
+}
+#pic-viewer::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 100px;
+}
+#filler-pic-box img{
+	border: none;
+	border-radius: 0;
+	visibility: hidden;
+}
+/*
+#pic-viewer::-webkit-scrollbar-button:horizontal:end:increment {
+  background-image: url(http://i.imgur.com/rwmYdPk.png);
+}
+#pic-viewer::-webkit-scrollbar-button:horizontal:start:decrement {
+  background-image: url(http://i.imgur.com/VAvOauT.png);
+}
+*/
