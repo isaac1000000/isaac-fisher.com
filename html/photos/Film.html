@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../../css/normalize.css">
   <link rel="stylesheet" href="../../css/core.css">
   <link rel="stylesheet" href="../../css/photos-core.css">
+  <link rel="stylesheet" href="../../css/film.css">
   <script src="../../js/core.js"></script>  
   <script src="../../js/photos.js"></script>  
   <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap" rel="stylesheet">
@@ -46,31 +47,36 @@
   </div>
   <main>
     <h3 id="page-heading">Some film. I'll have more soon, sorry.</h3>
-    <div class="one-third pic-box">
-      <img src="../../imgs/film/angle.jpg" alt="an angled shot">
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/film/ceiling.jpg" alt="an angled shot">
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/film/eor.jpg" alt="end of roll">
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/film/heilbronn.jpg" alt="heilbronn">
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/film/blur-car.jpg" alt="a blurred car">
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/film/heilbronn2.jpg" alt="heilbronn again">
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/film/self.jpg" alt="me">
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/film/self2.jpg" alt="me again">
+    <div id="pic-viewer">
+      <div id="pic-boxes">
+        <div class="focused pic-box">
+          <img src="../../imgs/film/angle.jpg" alt="an angled shot">
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/film/ceiling.jpg" alt="an angled shot">
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/film/eor.jpg" alt="end of roll">
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/film/heilbronn.jpg" alt="heilbronn">
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/film/blur-car.jpg" alt="a blurred car">
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/film/heilbronn2.jpg" alt="heilbronn again">
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/film/self.jpg" alt="me">
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/film/self2.jpg" alt="me again">
+        </div>
+        <div class="pic-box" id="filler-pic-box"><img></div>
+      </div>
     </div>
   </main>
-  <script>makeExpandable()</script>
+  <script>setupPicViewer()</script>
 </body>
 </html>

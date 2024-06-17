@@ -1,0 +1,11 @@
+#pic-viewer {
+	height: 36rem;
+	background-color: white;
+	background-blend-mode: difference;
+}
+.pic-box {
+	height: 14.6875rem;
+}
+.focused {
+	width: 44.9375rem;
+}

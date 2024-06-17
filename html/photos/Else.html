@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../../css/normalize.css">
   <link rel="stylesheet" href="../../css/core.css">
   <link rel="stylesheet" href="../../css/photos-core.css">
+  <link rel="stylesheet" href="../../css/else.css">
   <script src="../../js/core.js"></script>
   <script src="../../js/photos.js"></script>  
   <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap" rel="stylesheet">
@@ -46,55 +47,60 @@
   </div>
   <main>
     <h3 id="page-heading">All the rest.</h3>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/jumping-spider.jpg" alt="jumping spider">
-      <p>A baby regal jumping spider that I found in the grass</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/bahnmi.jpg" alt="bahn mi">
-      <p>The best Bahn Mi in New York from Saigon Deli on Broome Street</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/swing.jpg" alt="me">
-      <p>Me!</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/cheesesteak.jpg" alt="a cheesesteak">
-      <p>A real Philadehpia cheesesteak from my layover in Philly</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/bluestreet.jpg" alt="a street in Berlin">
-      <p>A street of Berlin's Mitte Bezirk</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/fernsehturm-regenbogen.jpg" alt="a rainbow over the fernsehturm">
-      <p>A rainbow over the Fernsehturm</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/viet-restaurant.jpg" alt="a dinner">
-      <p>A vietnamese restaurant with a nice view of the UBahn</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/freiluftkino.png" alt="freiluftkino">
-      <p>Freiluftkino Kreuzberg, an outdoor theater. I watched Oppenheimer in pouring rain here</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/doner.jpg" alt="doner">
-      <p>Probably my favorite döner kebab in Berlin that I got on my first day off the plane and never found again</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/lichtblick.jpg" alt="lichtblick kino">
-      <p>Lichtblick Kino, a one-room, 32-seat theater where I watched Casablanca for the first time</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/paris.jpg" alt="a cheese board">
-      <p>I'm not the biggest fan of Paris, but the mushroom brie and wine at this restaurant were really incredible</p>
-    </div>
-    <div class="one-third pic-box">
-      <img src="../../imgs/else/kreuzberg.jpg" alt="a kreuzberg street">
-      <p>A street in Kreuzberg, where I spent most of my time in Berlin</p>
+    <div id="pic-viewer">
+      <div id="pic-boxes">
+        <div class="focused pic-box">
+          <img src="../../imgs/else/jumping-spider.jpg" alt="jumping spider">
+          <p>A baby regal jumping spider that I found in the grass</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/bahnmi.jpg" alt="bahn mi">
+          <p>The best Bahn Mi in New York from Saigon Deli on Broome Street</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/swing.jpg" alt="me">
+          <p>Me!</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/cheesesteak.jpg" alt="a cheesesteak">
+          <p>A real Philadehpia cheesesteak from my layover in Philly</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/bluestreet.jpg" alt="a street in Berlin">
+          <p>A street of Berlin's Mitte Bezirk</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/fernsehturm-regenbogen.jpg" alt="a rainbow over the fernsehturm">
+          <p>A rainbow over the Fernsehturm</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/viet-restaurant.jpg" alt="a dinner">
+          <p>A vietnamese restaurant with a nice view of the UBahn</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/freiluftkino.png" alt="freiluftkino">
+          <p>Freiluftkino Kreuzberg, an outdoor theater. I watched Oppenheimer in pouring rain here</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/doner.jpg" alt="doner">
+          <p>Probably my favorite döner kebab in Berlin that I got on my first day off the plane and never found again</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/lichtblick.jpg" alt="lichtblick kino">
+          <p>Lichtblick Kino, a one-room, 32-seat theater where I watched Casablanca for the first time</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/paris.jpg" alt="a cheese board">
+          <p>I'm not the biggest fan of Paris, but the mushroom brie and wine at this restaurant were really incredible</p>
+        </div>
+        <div class="pic-box">
+          <img src="../../imgs/else/kreuzberg.jpg" alt="a kreuzberg street">
+          <p>A street in Kreuzberg, where I spent most of my time in Berlin</p>
+        </div>
+        <div class="pic-box" id="filler-pic-box"><img></div>
+      </div>
     </div>
   </main>
-  <script>makeExpandable()</script>
+  <script>setupPicViewer()</script>
 </body>
 </html>
