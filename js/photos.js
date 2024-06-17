@@ -3,7 +3,6 @@ function setupPicViewer() {
   picViewer.style.backgroundImage = "url('" + document.querySelector('.focused img').src + "')";
   const picBoxElements = document.getElementsByClassName("pic-box");
   var focusedPic = picBoxElements[0];
-  const picWidth = picBoxElements[1].offsetWidth;
   var scrollDebounce = true;
   var scrollEndDebounce = true;
 
@@ -17,6 +16,7 @@ function setupPicViewer() {
     scrollEndDebounce = false;
     setTimeout(function() {scrollEndDebounce = true; }, 500);
     if (scrollDebounce) {
+      var picWidth = picBoxElements[1].offsetWidth;
       scrollDebounce = false;
       // Distance from the left + the padding on the left of the boxes, selects from middle then divides to get index of pic
       focusedIndex = Math.floor((picViewer.scrollLeft + (picViewer.offsetWidth / 2) - picWidth) / picWidth);

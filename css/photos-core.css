@@ -32,6 +32,7 @@ main {
 #pic-boxes p {
 	display: none;
 	color: white;
+	padding: 0 1rem;
 }
 .pic-box {
 	display: inline-block;
@@ -76,11 +77,59 @@ main {
 	border-radius: 0;
 	visibility: hidden;
 }
-/*
-#pic-viewer::-webkit-scrollbar-button:horizontal:end:increment {
-  background-image: url(http://i.imgur.com/rwmYdPk.png);
+@media (max-width: 75rem){
+	html {
+		scroll-snap-type: y mandatory;
+	}
+	main {
+		margin-top: 0;
+		padding: 0;
+		width: 100vw;
+	}
+	#page-heading {
+		width: 100vw;
+		position: fixed;
+		z-index: 99;
+		float: right;
+		color: white;
+		top: 2.5rem;
+	}
+	#pic-viewer {
+		overflow: hidden;
+		white-space: normal;
+		width: 100vw;
+		height: auto !important;
+		margin: 0;
+		border: 0;
+		border-radius: 0;
+		padding-top: 20rem;
+	}
+	#pic-boxes {
+		overflow: hidden;
+		padding: 0;
+		margin: 0 auto;
+		width: inherit;
+		height: 100%;
+		display: block;
+	}
+	.pic-box {
+		display: block;
+		width: 60vw;
+		height: auto !important;
+		margin: 0 auto;
+		margin-bottom: 30rem;
+	}
+	#pic-boxes p {
+		display: block;
+		background-color: black;
+		border-radius: 10px;
+		padding-bottom: .5rem;
+		padding-top: .5rem;
+	}
+	.focused {
+		width: 60vw !important;
+		height: auto;
+		margin-top: 0;
+		font-size: inherit;
+	}
 }
-#pic-viewer::-webkit-scrollbar-button:horizontal:start:decrement {
-  background-image: url(http://i.imgur.com/VAvOauT.png);
-}
-*/

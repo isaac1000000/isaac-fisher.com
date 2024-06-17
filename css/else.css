@@ -10,3 +10,8 @@
 .focused {
 	width: 30rem;
 }
+@media (max-width: 75rem){
+	#pic-viewer {
+		background-size: contain;
+	}
+}
