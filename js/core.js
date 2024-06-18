@@ -10,3 +10,15 @@ function dropMenu() {
 		menuButton.src = "/imgs/menu.svg";
 	}
 }
+
+let throttleTimer = false;
+const throttle = (callback, time) => {
+    if (throttleTimer) return;
+    
+    throttleTimer = true;
+    
+    setTimeout(() => {
+        callback();
+        throttleTimer = false;
+	}, time);
+}

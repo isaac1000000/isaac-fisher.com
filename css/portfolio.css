@@ -22,15 +22,11 @@ h5 {
 main p {
 	font-size: 1.25rem;
 }
-#hint-container {
-	height: auto;
-	width: 100%;
-}
 .box {
 	border-bottom: 1px solid black;
-	padding-bottom: 2rem;
-	padding-top: 2rem;
-	height: 29rem;
+	padding-bottom: 10rem;
+	margin-top: 10rem;
+	height: 37rem;
 }
 .box img {
 	width: 25rem;
@@ -67,6 +63,22 @@ main p {
 	float: left;
 	padding-right: 3rem;
 	border-right: 1px solid black;
+}
+.scrolled {
+	animation: fade-in-bottom .5s ease-out both;
+	opacity: 1;
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+
+  }
 }
 @media (max-width: 75rem){
 	main {

@@ -31,9 +31,10 @@ h2 {
 }
 #main-box {
 	padding-top: 2rem;
-	height: 48rem;
-	padding-bottom: 2rem;
+	height: 58rem;
+	padding-bottom: 10rem;
 	border-bottom: 1px solid black;
+	margin-top: 10rem;
 }
 #about-me {
 	width: 28rem;
@@ -65,9 +66,9 @@ h2 {
 
 }
 #blog-box {
-	margin-top: 2rem;
-	height: 28rem;
-	padding-bottom: 2rem;
+	margin-top: 10rem;
+	height: 38rem;
+	padding-bottom: 10rem;
 	border-bottom: 1px solid black;
 	text-align: center;
 }
@@ -134,17 +135,17 @@ a#third-recent-post {
 	padding-left: 3rem;
 }
 #portfolio-box {
-	margin-top: 2rem;
-	height: 20rem;
-	padding-bottom: 2rem;
+	margin-top: 10rem;
+	height: 30rem;
+	padding-bottom: 10rem;
 	border-bottom: 1px solid black;
 }
 #portfolio-desc {
 	width: 20rem;
 	padding-right: 3rem;
 	float: left;
-	border-right: 1px solid black;
 }
+
 #project-header {
 	display:none;
 }
@@ -155,6 +156,7 @@ a#third-recent-post {
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
+	border-left: 1px solid black;
 }
 #project-box a {
 	width: 12rem;
@@ -181,7 +183,7 @@ a#photos-link {
 	border: .5rem solid black;
 	box-shadow: -2px 5px 5px dimgray;	
 	border-radius: 10px;
-	margin-top: 2rem;
+	margin-top: 10rem;
 	color: white;
 }
 a#photos-link:hover {
@@ -254,6 +256,7 @@ a#photos-link:hover {
 		padding: 0 10%;
 		border: 0;
 		height: auto;
+		margin: 0;
 	}
 	#about-me {
 		padding: 0;
@@ -319,6 +322,7 @@ a#photos-link:hover {
 		float: none;
 		margin: 0 auto;
 		padding: 0;
+		border-left: 0;
 	}
 	#project-box a {
 		padding: 0;
@@ -328,7 +332,7 @@ a#photos-link:hover {
 		box-shadow: none;
 		line-height: 1;
 		display: block;
-	    box-shadow: -2px 5px 5px dimgray;	
+	   box-shadow: -2px 5px 5px dimgray;	
 	}
 	#project-box #text:hover {
 		display: none;
