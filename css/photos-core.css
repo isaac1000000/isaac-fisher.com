@@ -97,6 +97,7 @@ main {
 		float: right;
 		color: white;
 		top: 2.5rem;
+		right: 1rem;
 	}
 	#pic-viewer {
 		overflow: hidden;
