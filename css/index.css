@@ -20,9 +20,6 @@ h2 {
 #main-title {
 	font-size: 6rem;
 	text-align: left;
-	text-decoration-thickness: .25rem;
-	text-decoration-style: wavy;
-	text-decoration-color: red;
 }
 #main-desc {
 	margin-top: 10rem;
