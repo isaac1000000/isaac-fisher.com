@@ -49,7 +49,7 @@
   <main>
     <h1 id="main-title">hi,<br> i'm <span id="name-title" onclick="titleOnClick()" onmouseover="titleOnHover()" onmouseleave="titleOnLeave()">isaac</span>.</h1>
     <p id="main-desc">I'm a senior at NYU, and I study computer science and German.</p>
-    <div id="main-box">
+    <div id="main-box" class="scroll-fade-in">
       <div id="about-me">
         <h3>About me</h3>     
         <p>I'm Isaac. I'm a double major in computer science and German studies at NYU. I spend most of my time playing volleyball, cooking, reading German plays, or coding. Right now I'm reading Anna Karenina and Wolfgang Herrndorf's biography. Some of my favorite German authors are Walter Benjamin, Henrik Ibsen (close enough), and Christoph Schlingensief, but I read English books too. At the moment I'm working on two coding projects: this website, which I'm building from scratch in HTML/CSS/JS, and Dictionfairy, a desktop app that makes learning languages just a bit easier.</p>
@@ -63,7 +63,7 @@
         <img id="sketch" src="imgs/sketch.jpeg" alt="A stylish black box">
       </div>
     </div>
-    <div id="blog-box">
+    <div id="blog-box" class="scroll-fade-in">
       <div id="post-box">
         <h3>Latest posts:</h3>
         <a href="html/Blog.html#the-state-of-things" id="most-recent-post">The State of Things<br>June 14, 2024</a>
@@ -75,7 +75,7 @@
         <p>I'm starting a blog. I might write about what I'm coding this week, the latest Ibsen play I'm rereading, or whatever's on my mind. Maybe some recipes, too. To the left are some of my recent articles. I'll try to update weekly or so, but depending on what I'm up to it could be more or less frequent. If you'd like to contact me about anything I write there, you'll find my information over on the contacts page.</p>
       </div>
     </div>
-    <div id="portfolio-box">
+    <div id="portfolio-box" class="scroll-fade-in">
       <div id="portfolio-desc">
         <h3>Portfolio</h3>
         <p>I'll be cataloging all my personal projects here too. You can find the exhaustive list on the portfolio page, or without comment on my GitHub. On the right are direct links to my most recent.</p>
@@ -88,7 +88,8 @@
         <a href="html/projects/MyLikedLive.html"><span class="project-label">MyLikedLive</span><img src="imgs/yll.jpg"></a>
       </div>
     </div>
-    <a href="html/Photos.html" id="photos-link"><img src="imgs/photos-link.jpg"><h2>Photos</h2></a>
+    <a href="html/Photos.html" id="photos-link" class="scroll-fade-in"><img src="imgs/photos-link.jpg"><h2>Photos</h2></a>
   </div>
+  <script>setupScrollFadeIn();</script>
 </body>
 </html>
