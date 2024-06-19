@@ -63,6 +63,7 @@ main p {
 	float: left;
 	padding-right: 3rem;
 	border-right: 1px solid black;
+	height: 25rem;
 }
 .scrolled {
 	animation: fade-in-bottom .5s ease-out both;
