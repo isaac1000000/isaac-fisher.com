@@ -9,7 +9,6 @@ function setupPicViewer() {
   picViewer.addEventListener("scroll", function(){
     if (scrollEndDebounce) {
       scrollEndDebounce = false;
-      console.log("scroll call");
       focusedPic.classList.remove("focused");
     }
   });
@@ -18,7 +17,6 @@ function setupPicViewer() {
     scrollEndDebounce = false;
     setTimeout(function() {scrollEndDebounce = true; }, 500);
     if (scrollDebounce) {
-      console.log("scrollend call");
       var picWidth = picBoxElements[1].offsetWidth;
       scrollDebounce = false;
       // Distance from the left + the padding on the left of the boxes, selects from middle then divides to get index of pic
