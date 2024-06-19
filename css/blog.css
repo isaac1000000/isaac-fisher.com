@@ -96,6 +96,7 @@ aside.active ul {
 }
 aside li {
 	overflow-x: hidden;
+	border: 1px solid black;
 }
 aside button {
 	display: none;
@@ -103,6 +104,9 @@ aside button {
 	width: 100%;
 	text-align: right;
 	cursor: pointer;
+}
+aside button:hover {
+	background-color: lightblue;
 }
 aside.active button {
 	display: block;
