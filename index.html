@@ -60,7 +60,23 @@
       </div>
       <div id="pic-blox">
         <img id="main-img" src="imgs/self.jpg" alt="A nice picture of yours truly"> 
-        <img id="sketch" src="imgs/sketch.jpeg" alt="A stylish black box">
+        <div id="sketch-box">
+          <button class="sketch-button" id="left-sketch-button" onclick="sketchLeftOnClick()">
+            <img src="imgs/open-sidebar.svg">
+          </button>
+          <img id="sketch" src="imgs/sketches/sketch.jpeg" alt="A nice sketch">
+          <button class="sketch-button" id="right-sketch-button" onclick="sketchRightOnClick()">
+            <img src="imgs/open-sidebar.svg">
+          </button>
+          <div id="sketch-index-marker">
+            <span class="sketch-index-badge active" onclick="setSketchIndex(0);"></span>
+            <span class="sketch-index-badge" onclick="setSketchIndex(1);"></span>
+            <span class="sketch-index-badge" onclick="setSketchIndex(2);"></span>
+            <span class="sketch-index-badge" onclick="setSketchIndex(3);"></span>
+            <span class="sketch-index-badge" onclick="setSketchIndex(4);"></span>
+            <span class="sketch-index-badge" onclick="setSketchIndex(5);"></span>
+          </div>
+        </div>
       </div>
     </div>
     <div id="blog-box" class="scroll-fade-in">
