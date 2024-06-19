@@ -52,8 +52,8 @@ aside {
 	display: block;
 	width: 2rem;
 	height: 20rem;
-	top: 5rem;
-	margin-top: 5rem;
+	top: 20vh;
+	margin-top: 30vh;
 	margin-left: -15rem;
 	position: -webkit-sticky;
 	position: sticky;
@@ -63,6 +63,7 @@ aside {
 	overflow-x: hidden;
 	overflow-y: hidden;
 	white-space: nowrap;
+	box-shadow: -2px 5px 5px dimgray;
 }
 aside.active {
 	width: 15rem;
@@ -81,7 +82,8 @@ aside h3 {
 	height: 2rem;
 }
 aside.active h3 {
-	display: block;
+	display: flex;
+	justify-content: space-between;
 }
 aside ul {
 	display: none;
