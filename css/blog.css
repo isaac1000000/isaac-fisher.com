@@ -104,6 +104,7 @@ aside button {
 	width: 100%;
 	text-align: right;
 	cursor: pointer;
+	color: black;
 }
 aside button:hover {
 	color: black;
