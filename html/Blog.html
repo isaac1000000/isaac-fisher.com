@@ -62,7 +62,7 @@
       <article id="javascript-and-the-plateau">
         <h2>JavaScript and the Plateau</h2>
         <h4>June 18, 2024</h4>
-        <p>There's a moment of realization in every project where you put it down for once, look at what you've done and what you have to do and come up empty. Two days ago I started with JavaScript, in which I have little experience - especially not in a web design context. I fiddled with some ideas: a cutesy spellcheck-mimic for my name on the homepage, fade-ins with scrolling elements, a dozen different slider formats for the photos subpages. The former was thankfully thrown out early, the latter eventually settled on.</p>
+        <p>There's a moment of realization in every project where you put it down for once, look at what you've done and what you have to do and come up empty. Two days ago I started with JavaScript, in which I have little experience - especially not in a web design context. I fiddled with some ideas: a cutesy spellcheck-mimic for my name on the homepage, fade-ins with scrolling elements, a dozen different slider formats for the photos subpages. The spellcheck was thankfully thrown out early, the slider eventually settled on.</p>
         <p>I also put a tags system on the blog that I'm pretty proud of. It's the first JavaScript functionality that I've added that I can say I wrote 100% of. It's a pretty simple concept - compare a set of active tags to the tags of each post, and get rid of the posts that don't match. I was shocked at how similar some of the syntax is to Python. The <code>.forEach()</code> method stuck out to me as especially Pythonic, and I ended up with this beast of a line to fill out a <code>Map</code> object with each post and its tags that looks something like Google Translate tried translating Python into JavaScript: <code>postTags.set(post.id, [...document. querySelectorAll("#" + post.id + " .tags li")].map(x => x.innerHTML))</code>. Oh yeah, and how weird is that <code>=></code> operator anyways? No idea how you JS people do it. Anyways, check it out on the right. It's probably the last major feature I'll add for a while, which brings me to my final topic:</p>
         <p>I've plateaued. I'm at a loss for ideas. I've got some administrative stuff to do, writing docs for a couple of projects and the like. But I've reached the limit of my own raw creativity. The plan: research and development. I'm going to take a week or two, look over some examples, mark down the things I like. Maybe even go through some UX/UI courses. I'm announcing this so that it's no surprise when I don't touch the site for a moment. You'll probably see a post or two related to some German readings or Dictionfairy, maybe a couple of minor changes to font sizes or borders or whatever. Know that I've not abandoned you, my loyal readers. I'll be back and inspired eventually, I promise.</p>
         <ul class="tags">
@@ -71,6 +71,7 @@
           <li>#programming</li>
           <li>#javascript</li>
           <li>#general</li>
+          <li>#python</li>
         </ul>
       </article>
 
@@ -86,6 +87,7 @@
           <li>#programming</li>
           <li>#css</li>
           <li>#dictionfairy</li>
+          <li>#python</li>
         </ul>
       </article>
 
@@ -131,6 +133,7 @@
           <li>#isaac-fisher.com</li>
           <li>#programming</li>
           <li>#css</li>
+          <li>#javascript</li>
           <li>#german</li>
           <li>#general</li>
         </ul>      
