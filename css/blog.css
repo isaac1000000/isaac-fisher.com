@@ -1,9 +1,13 @@
 body {
 	margin-bottom: 10rem;
+	overflow: visible;
 }
 main{
-	width: 37.5rem;
-	margin-top: 0px;
+	padding-top: 8rem;
+	margin-top: 0;
+	display: flex;
+	justify-content: space-around;
+	overflow: visible;
 }
 h2 {
 	margin-top: 0px;
@@ -17,26 +21,153 @@ h4 {
 	margin-bottom: 0px;
 	text-align: left;
 }
+article {
+	width: 37.5rem;
+	padding-bottom: 8rem;
+	padding-top: 5rem;
+}
 main > p {
 	margin-top: .625rem;
 	text-align: left;
 }
 #content {
 	max-width: 37.5rem;
+	align-self: center;
+	overflow: visible;
 }
 #content a:link {
 	text-decoration: underline;
 }
-.entry {
-	padding-top: 8rem;
+.tags {
+
+}
+.tags li {
+	display: inline-block;
+	padding: .25rem;
+	font-size: .75rem;
+	background-color: gray;
+	border-radius: 5px;
+}
+aside {
+	display: block;
+	width: 2rem;
+	height: 20rem;
+	top: 5rem;
+	margin-top: 5rem;
+	margin-left: -15rem;
+	position: -webkit-sticky;
+	position: sticky;
+	border-radius: 10px;
+	background-color: black;
+	transition: width 1s cubic-bezier(.25,0,0,1);
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+aside.active {
+	width: 15rem;
+	background-color: white;
+	border: .5rem solid black;
+}
+aside h3 {
+	display: none;
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding-bottom: .5rem;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	white-space: nowrap;
+	height: 2rem;
+}
+aside.active h3 {
+	display: block;
+}
+aside ul {
+	display: none;
+	overflow-y: scroll;
+	height: 17rem;
+	margin: 0;
+}
+aside.active ul {
+	display: block;
+}
+aside li {
+	overflow-x: hidden;
+}
+aside button {
+	display: none;
+	background-color: white;
+	width: 100%;
+	text-align: right;
+	cursor: pointer;
+}
+aside.active button {
+	display: block;
+}
+aside.active button.active {
+	background-color: darkgray;
+}
+#exit-tags-button {
+	display: none;
+	width: 1.5rem;
+	float: right;
+	background: none;
+	border: none;
+	padding: 0;
+}
+#exit-tags-button img {
+	width: inherit;
+}
+aside.active #exit-tags-button {
+	display: block;
+}
+aside.active #open-tags-button {
+	display: none;
+}
+#open-tags-button {
+	display: inline;
+	height: 100%;
+	width: 1.5rem;
+	vertical-align: middle;
+	margin: 0 .25rem;
+	background: none;
+	border: none;
+	padding: 0;
+}
+#open-tags-button img {
+	width: inherit;
+}
+#results-counter {
+	width: 37.5rem;
+	text-align: center;
+}
+aside ul::-webkit-scrollbar { 
+	width: .25rem;
+	background-color: transparent;
+}
+aside ul::-webkit-scrollbar-thumb {
+	background: black;
 }
 @media (max-width: 75rem){
 	main {
-		margin-top: 9rem;
+		padding-top: 9rem;
 		width: 100%;
+		display: block;
 	}
 	#content {
 		width: 75%;
 		margin: 0 auto;
+	}
+	article {
+		width: 100%;
+	}
+	aside{
+		position: fixed;
+		margin: 0;
+		right: 1rem;
+	}
+	#results-counter {
+		width: 100%;
 	}
 }

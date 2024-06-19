@@ -45,7 +45,9 @@ a:hover {
 code {
 	background-color: #8f8477;
 	border-radius: 4px;
-	padding: 0 2px;
+	padding: 0 .5px;
+	word-wrap: normal;
+	line-height: 125%;
 }
 .navigation {
 	position: fixed;

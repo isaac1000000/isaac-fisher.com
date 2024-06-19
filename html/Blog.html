@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/core.css">
   <link rel="stylesheet" href="../css/blog.css">
-  <script src="../js/core.js"></script>  
+  <script src="../js/core.js"></script> 
+  <script src="../js/blog.js"></script> 
   <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -46,46 +47,117 @@
   <main>
     <div id="content">
     <!-- Place all new entries below this line, and don't forget to update index.html and any mentioned project pages -->
+    <!-- IMPORTANT: ADD ANY NEW TAGS TO THE LIST BELOW THE CONTENT-->
     <!-- 
-      <div class="entry" id="title">
+      <article id="title">
         <h2>Title</h2>
         <h4>Date</h4>
         <p>Content</p>
-      </div>
+        <ul class="tags">
+          Tags:
+          <li>#example</li>
+        </ul>
+      </article>
     -->
-      <div class="entry" id="the-state-of-things">
+      <article id="javascript-and-the-plateau">
+        <h2>JavaScript and the Plateau</h2>
+        <h4>June 18, 2024</h4>
+        <p>There's a moment of realization in every project where you put it down for once, look at what you've done and what you have to do and come up empty. Two days ago I started with JavaScript, in which I have little experience - especially not in a web design context. I fiddled with some ideas: a cutesy spellcheck-mimic for my name on the homepage, fade-ins with scrolling elements, a dozen different slider formats for the photos subpages. The former was thankfully thrown out early, the latter eventually settled on.</p>
+        <p>I also put a tags system on the blog that I'm pretty proud of. It's the first JavaScript functionality that I've added that I can say I wrote 100% of. It's a pretty simple concept - compare a set of active tags to the tags of each post, and get rid of the posts that don't match. I was shocked at how similar some of the syntax is to Python. The <code>.forEach()</code> method stuck out to me as especially Pythonic, and I ended up with this beast of a line to fill out a <code>Map</code> object with each post and its tags that looks something like Google Translate tried translating Python into JavaScript: <code>postTags.set(post.id, [...document. querySelectorAll("#" + post.id + " .tags li")].map(x => x.innerHTML))</code>. Oh yeah, and how weird is that <code>=></code> operator anyways? No idea how you JS people do it. Anyways, check it out on the right. It's probably the last major feature I'll add for a while, which brings me to my final topic:</p>
+        <p>I've plateaued. I'm at a loss for ideas. I've got some administrative stuff to do, writing docs for a couple of projects and the like. But I've reached the limit of my own raw creativity. The plan: research and development. I'm going to take a week or two, look over some examples, mark down the things I like. Maybe even go through some UX/UI courses. I'm announcing this so that it's no surprise when I don't touch the site for a moment. You'll probably see a post or two related to some German readings or Dictionfairy, maybe a couple of minor changes to font sizes or borders or whatever. Know that I've not abandoned you, my loyal readers. I'll be back and inspired eventually, I promise.</p>
+        <ul class="tags">
+          Tags:
+          <li>#isaac-fisher.com</li>
+          <li>#programming</li>
+          <li>#javascript</li>
+          <li>#general</li>
+        </ul>
+      </article>
+
+      <article id="the-state-of-things">
         <h2>The State of Things</h2>
         <h4>June 14, 2024</h4>
         <p>It's done! The website. Or almost done, I need to add docs for a couple projects and clean up the look on mobile. But those are their own things. For now, go check out the portfolio page, or the photos page. I'm happy enough with how they turned out, and I think I can finally move on from building out the website and instead focus on cleaning up the look and doing a bit of work with Dictionfairy. Sometime in the next few days I'll write entries about my earlier projects too and some of their specifics.</p>
         <p>The website's been smooth. Most of my effort lately has gone to standardizing page stylings and setups for the portfolio and photos sections of the site. I'm very happy with the portfolio for now and ok with the photo subpages. The photo landing page looks fantastic though, and I think I used a neat little trick that I'd like to talk about briefly. It's a div with three equally-sized square images cut with the <code>clip-path</code> CSS property, and there's some math involved in the cuts that I don't think is worth diving into here but was fun to work out. I opted for a grid display and split the div into 10, with each cut image taking up 4 columns in the same row, where the split happens in the 4th and 7th columns of the whole thing. Then I just styled the div and ended up with a sort of retro-Apple look that I'm a big fan of.</p>
         <p>While I have the chance, I'm going to talk a bit about the state Dictionfairy as well. All the functionality I need is there, which is nice. From here it's a few simple steps: One, I need to set up an easy way to do hotkey configuration if it's realistic. I think I should be able to just use the keyboard monitoring technique I already have but we'll see. Two, I need to make a page for the user to customize their own dictionary, which I think should be as simple as asking for a base website and a CSS selector to collect the results. Besides the docs and styling, that's about it - then, of course, testing and deployment. I use the tool a bunch in my own life, so it's nice to see it come along to the point where it might help others in the same way.</p>
-      </div>
+        <ul class="tags">
+          Tags:
+          <li>#isaac-fisher.com</li>
+          <li>#programming</li>
+          <li>#css</li>
+          <li>#dictionfairy</li>
+        </ul>
+      </article>
 
-      <div class="entry" id="time-to-get-technical">
+      <article id="time-to-get-technical">
         <h2>Time to Get Technical</h2>
         <h4>June 8, 2024</h4>
         <p>The website is coming together. I wanted to take the time today to get a little technical and start to describe some of the things I've learned from this project. As a major amateur in the webdev/UI field I imagine this will read like a kindergartner's first picture book, but that's ok.</p>
         <p>The first major issue I faced was on the contact page with the smaller browser window format for the site. The menu for this sized viewport relies on continuing to hover over the menu to keep it open, but this failed around the bottom left corner of my side tab in the contacts page, right where the <code>h2</code> and <code>p</code> elements overlap the menu. Ok, alright. Should be a quick and easy <code>z-index</code> fix. But of course this didn't work. I figured I had to set my menu dropdown to <code>position: relative</code> for the z-index to work (not the case - again, I'm new). And now my links are gone. At this point, it's about 2am and I am not happy. I grabbed the properties of the menu link elements with both <code>position: relative</code> and <code>absolute</code>. Just one thing's changed: the offset parent.</p>
         <p>I actually didn't think anything of it at the time. I changed back to <code>absolute</code> and looked for a fix elsewhere. 3am. StackOverflow points me to <a href="https://www.joshwcomeau.com/css/stacking-contexts/", target="_blank">this article</a> about the pitfalls of <code>z-index</code>. Scrolling, scrolling, WAIT! Haven't I seen that <code>offsetParent</code> name before? I ran back to the elements and sure enough, the <code>offsetParent</code> of my dropdown menu was as far back as <code>div.navigation</code>. I was working in the wrong stacking context, and a quick <code>z-index: 99</code> to that parent div let me go to bed content.</p>
-      </div>
+        <ul class="tags">
+          Tags:
+          <li>#isaac-fisher.com</li>
+          <li>#programming</li>
+          <li>#css</li>
+        </ul>
+      </article>
 
-      <div class="entry" id="lots-and-lots-of-css">
+      <article id="lots-and-lots-of-css">
         <h2>Lots and Lots of CSS</h2>
         <h4>June 6, 2024</h4>
         <p>Third day of the website. My brain is complete mush from the StackOverflow CSS dives. I can't wait to get back to DictionFairy but I know that if I stop now I won't finish, and I'd really like to see this thing come together so that I can use it in the future.</p>
         <p>I spent today working on a mobile port for the site. I discovered far too long into the process that the modern developer starts with mobile and builds out from there. Not me, clearly - thank god I probably won't have to do anything like this again for a while. Tomorrow I think I'll put more content up, especially on the portfolio page. </p>
         <p>Also, I cooked a nice <a href="https://www.seriouseats.com/tender-beef-barbacoa-chipotle-tacos-recipe" target="_blank">Chipotle-clone barbacoa beef</a> today. It took hours to find the oxtails. Life is harder without a C-Town down the street.</p>
         <p>I figure I'll be showing this to a few people in the next few days. If you're one of them, hello! Welcome, I'll probably forget I have this thing by the end of the month.</p>
-      </div>
+        <ul class="tags">
+          Tags:
+          <li>#isaac-fisher.com</li>
+          <li>#programming</li>
+          <li>#css</li>
+          <li>#food</li>
+          <li>#general</li>
+        </ul>      
+      </article>
 
-      <div class="entry" id="discovering-web-design">
+      <article id="discovering-web-design">
         <h2>Discovering Web Design and Starting a New Book</h2>
         <h4>June 3, 2024</h4>
         <p>I've made a routine of going to the coffee shop this summer right around noon every day. Today I was late; I stopped by Dickinson College's library to pick up a copy of <em>Herrndorf</em>, a biography of Wolfgang Herrndorf, author of <em>Tschick</em> and <em>Sand</em>. I'll be reading his bio this summer with Dickinson's Dr. McGaughey, a professor who I reached out to about a shared interest in Herrndorf's work.</p>
         <p>I also decided rather impulsively to build this website. I've tried before, but it was much more amateurish and I was not very capable. I'll be working from the ground up with an HTML/CSS/JS stack, but I am honestly not entirely sure where the JS will come in with how static the website should be. Either way, I'm excited to get back into web design and see what I can get done before the end of summer. </p>
         <p>Outlier work picked back up again today - I've been moved to a math project, which is a nice change of pace. Hoping to make some decent money for a trip to Berlin in August.</p>
+        <ul class="tags">
+          Tags:
+          <li>#isaac-fisher.com</li>
+          <li>#programming</li>
+          <li>#css</li>
+          <li>#german</li>
+          <li>#general</li>
+        </ul>      
+      </article>
+      <p id="results-counter"></p>
     </div>
-    </div>
+    <aside id="tag-menu">
+      <h3>Available tags:<button id="exit-tags-button"><img src="../imgs/exit-menu.svg"></button></h3>
+      <ul>
+        <li><button>#programming</button></li>
+        <li><button>#german</button></li>
+        <li><button>#general</button></li>
+        <li><button>#food</button></li>
+        <li><button>#isaac-fisher.com</button></li>
+        <li><button>#dictionfairy</button></li>
+        <li><button>#schlockfish</button></li>
+        <li><button>#2048simulator</button></li>
+        <li><button>#mylikedlive</button></li>
+        <li><button>#javascript</button></li>
+        <li><button>#css</button></li>
+        <li><button>#python</button></li>
+        <li><button>#java</button></li>
+        <li><button>#c</button></li>
+      </ul>
+      <button id="open-tags-button" ><img src="../imgs/open-sidebar.svg"></button>
+      <script>setupBlogButtons();</script>
+    </aside>
   </main>
 </body>
 </html>
