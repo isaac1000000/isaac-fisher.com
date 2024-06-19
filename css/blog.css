@@ -106,6 +106,7 @@ aside button {
 	cursor: pointer;
 }
 aside button:hover {
+	color: black;
 	background-color: lightblue;
 }
 aside.active button {
