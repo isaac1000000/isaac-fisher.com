@@ -83,6 +83,7 @@ h2 {
 	cursor: pointer;
 	opacity: .7;
 	background-color: dimgray;
+	z-index: 60;
 }
 .sketch-button img {
 	width: 3rem;
@@ -104,6 +105,7 @@ h2 {
 	height: 1rem;
 	justify-content: center;
 	animation: fade-in-bottom .5s;
+	z-index: 50;
 }
 .sketch-index-badge {
 	height: 1rem;
