@@ -3,7 +3,7 @@ body {
 	overflow: visible;
 }
 main{
-	padding-top: 8rem;
+	padding-top: var(--nav-bar-height);
 	margin-top: 0;
 	display: flex;
 	justify-content: space-around;

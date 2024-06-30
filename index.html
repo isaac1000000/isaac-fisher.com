@@ -4,51 +4,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
   <title>Isaac Fisher - Home</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/core.css">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="js/core.js"></script>
-  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/core.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <script src="/js/core.js"></script>
+  <script src="/js/index.js"></script>
   <link rel="preload" href="/files/fonts/brawler-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/files/fonts/brawler-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-  <div class="navigation">
-    <div class="desktop-header">
-        <li><h1>if</h1></li>
-        <div class="site-links">
-          <li>
-            <ul>
-              <li><a href="index.html" class="current-page">Home</a></li>
-              <li><a href="html/Blog.html">Blog</a></li>
-              <li><a href="html/Portfolio.html">Portfolio</a></li>
-              <li><a href="html/Photos.html">Photos</a></li>
-              <li><a href="files/FisherResumeForWebsite.pdf", target="_blank">Resume</a></li>
-              <li><a href="html/Contact.html">Contact</a></li>
-            </ul>
-          </li>
+  <header>
+    <nav id="site-navigation">
+      <div id="site-navigation-content">
+        <a href="/" id="logo">if</a>
+        <div id="nav-socials">
+          <a href="https://github.com/isaac1000000"><img src="/imgs/github-logo.svg" alt="github logo"></a>
+          <a href="https://www.linkedin.com/in/isaaclfisher/"><img src="/imgs/linkedin-logo.svg" alt="linkedin logo"></a>
+          <a href="mailto:isaac.fisher@nyu.edu"><img src="/imgs/mailto-logo.svg" alt="mail logo"></a>
         </div>
-    </div>
-    <div class="mobile-header">
-      <li><h1>if</h1></li>
-      <div class="menu-dropdown">
-        <li><button class="menu-btn" onclick="dropMenu()"><img src="imgs/menu.svg" width="800" height="800"></button></li>
-        <div class="menu-content">
-          <div style="border-top: 1px solid white; width: 50%; margin: 0 auto;"></div>
-          <p>Home</p>
-          <a href="html/Blog.html">Blog</a>
-          <a href="html/Portfolio.html">Portfolio</a>
-          <a href="html/Photos.html">Photos and Food</a>
-          <a href="files/FisherResumeForWebsite.pdf", target="_blank">Download Resume (PDF)</a>
-          <a href="html/Contact.html">Contact</a>
+        <div id="nav-links-block">
+          <img src="/imgs/menu.svg" id="nav-menu-button" onclick="dropMenu()">
+          <div id="nav-links">
+            <a href="/index.html" class="current">Home</a>
+            <a href="/Blog.html">Blog</a>
+            <a href="/Portfolio.html">Portfolio</a>
+            <a href="/Food.html">Food</a>
+            <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a>
+            <a href="/Contact.html">Contact</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </nav>
+  </header>
   <div id="landing">
     <h1 id="main-title"><span id="hi">hi,</span> <span id="im">i'm</span><br><span id="isaac">isaac.</span></h1>
     <p id="main-desc">I'm a senior at NYU, and I study computer science and German.</p>
-    <object data="/imgs/down-arrow-circled.svg" type="image/svg+xml" id="down-arrow"></object>
+    <svg viewBox="-4 -4 38 38" id="down-arrow-circled-svg" data-name="Lager 29" xmlns="http://www.w3.org/2000/svg">
+      <path id="arrow-path" data-name="arrow-path" d="M20.587,14.613,18,17.246V9.98A1.979,1.979,0,0,0,16.02,8h-.04A1.979,1.979,0,0,0,14,9.98v6.963l-.26-.042-2.248-2.227a2.091,2.091,0,0,0-2.657-.293A1.973,1.973,0,0,0,8.58,17.4l6.074,6.016a2.017,2.017,0,0,0,2.833,0l5.934-6a1.97,1.97,0,0,0,0-2.806A2.016,2.016,0,0,0,20.587,14.613Z"/>
+      <path id="circle-path" data-name="circle-path" d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Z"/>
+    </svg>
   </div>
   <main>
     <div id="main-box" class="scroll-fade-in">
@@ -57,14 +51,14 @@
         <p>I'm Isaac. I'm a double major in computer science and German studies at NYU. I spend most of my time playing volleyball, cooking, reading German plays, or coding. Right now I'm reading Anna Karenina and Wolfgang Herrndorf's biography. Some of my favorite German authors are Walter Benjamin, Henrik Ibsen (close enough), and Christoph Schlingensief, but I read English books too. At the moment I'm working on two coding projects: this website, which I'm building from scratch in HTML/CSS/JS, and Dictionfairy, a desktop app that makes learning languages just a bit easier.</p>
       </div>
       <div id="pic-blox">
-        <img id="main-img" src="imgs/self.jpg" alt="A nice picture of yours truly"> 
+        <img id="main-img" src="/imgs/self.jpg" alt="A nice picture of yours truly"> 
         <div id="sketch-box">
           <button class="sketch-button" id="left-sketch-button" onclick="sketchLeftOnClick()">
-            <img src="imgs/open-sidebar-left.svg">
+            <img src="/imgs/open-sidebar-left.svg">
           </button>
-          <img id="sketch" src="imgs/sketches/sketch.jpeg" alt="A nice sketch">
+          <img id="sketch" src="/imgs/sketches/sketch.jpeg" alt="A nice sketch">
           <button class="sketch-button" id="right-sketch-button" onclick="sketchRightOnClick()">
-            <img src="imgs/open-sidebar-right.svg">
+            <img src="/imgs/open-sidebar-right.svg">
           </button>
           <div id="sketch-index-marker">
             <span class="sketch-index-badge active" onclick="setSketchIndex(0);"></span>
@@ -80,9 +74,9 @@
     <div id="blog-box" class="scroll-fade-in">
       <div id="post-box">
         <h3>Latest posts:</h3>
-        <a href="html/Blog.html#v010-and-the-virus-issue" id="most-recent-post">v0.1.0 and the Virus Issue<br>June 21, 2024</a>
-        <a href="html/Blog.html#javascript-and-the-plateau" id="second-recent-post">JavaScript and the Plateau<br>June 18, 2024</a>
-        <a href="html/Blog.html#the-state-of-things" id="third-recent-post">The State of Things<br>June 14, 2024</a>
+        <a href="/Blog.html#v010-and-the-virus-issue" id="most-recent-post">v0.1.0 and the Virus Issue<br>June 21, 2024</a>
+        <a href="/Blog.html#javascript-and-the-plateau" id="second-recent-post">JavaScript and the Plateau<br>June 18, 2024</a>
+        <a href="/Blog.html#the-state-of-things" id="third-recent-post">The State of Things<br>June 14, 2024</a>
       </div>
       <div id="blog-desc">
         <h3>Blog</h3>
@@ -96,13 +90,13 @@
       </div>
       <h3 id="project-header">Some of my projects:</h3>
       <div id="project-box">
-        <a href="html/projects/Dictionfairy.html"><span class="project-label">Dictionfairy</span><img src="imgs/df-icon-transparent.png"></a>
-        <a href="html/projects/IsaacFisherCom.html"><span class="project-label">isaac-fisher.com</span><img src="imgs/iflogo.JPG"></a>
-        <a href="html/projects/Schlockfish.html"><span class="project-label">schlockfish</span><img src="imgs/schlockfish.jpg"></a>
-        <a href="html/projects/MyLikedLive.html"><span class="project-label">MyLikedLive</span><img src="imgs/yll.jpg"></a>
+        <a href="/projects/Dictionfairy.html"><span class="project-label">Dictionfairy</span><img src="/imgs/df-icon-transparent.png"></a>
+        <a href="/projects/IsaacFisherCom.html"><span class="project-label">isaac-fisher.com</span><img src="/imgs/iflogo.JPG"></a>
+        <a href="/projects/Schlockfish.html"><span class="project-label">schlockfish</span><img src="/imgs/schlockfish.jpg"></a>
+        <a href="/projects/MyLikedLive.html"><span class="project-label">MyLikedLive</span><img src="/imgs/yll.jpg"></a>
       </div>
     </div>
-    <a href="html/Photos.html" id="photos-link" class="scroll-fade-in"><img src="imgs/photos-link.jpg"><h2>Photos</h2></a>
+    <a href="/Photos.html" id="photos-link" class="scroll-fade-in"><img src="/imgs/photos-link.jpg"><h2>Food</h2></a>
   </div>
   <script>setupScrollFadeIn();</script>
 </body>

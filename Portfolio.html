@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Fisher - Portfolio</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/core.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+  <script src="/js/core.js"></script> 
+  <script src="/js/portfolio.js"></script> 
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+  <header>
+    <nav id="site-navigation">
+      <div id="site-navigation-content">
+        <a href="/" id="logo">if</a>
+        <div id="nav-socials">
+          <a href="https://github.com/isaac1000000"><img src="/imgs/github-logo.svg" alt="github logo"></a>
+          <a href="https://www.linkedin.com/in/isaaclfisher/"><img src="/imgs/linkedin-logo.svg" alt="linkedin logo"></a>
+          <a href="mailto:isaac.fisher@nyu.edu"><img src="/imgs/mailto-logo.svg" alt="mail logo"></a>
+        </div>
+        <div id="nav-links-block">
+          <img src="/imgs/menu.svg" id="nav-menu-button" onclick="dropMenu()">
+          <div id="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/Blog.html">Blog</a>
+            <a href="/Portfolio.html" class="current">Portfolio</a>
+            <a href="/Food.html">Food</a>
+            <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a>
+            <a href="/Contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="dictionfairy-box" class="box">
+      <div class="box-text">
+        <h3><a href="/projects/Dictionfairy.html">Dictionfairy</a></h3>
+        <h4>Summer 2024 - Ongoing</h4>
+        <p>Dictionfairy is a desktop app that you can customize with your dictionary of choice. It'll sit above other windows you have so you can look up words with just a hotkey and a click. It's designed with foreign languages in mind. Preloaded with dwds.de, Leo, WordReference, Merriam-Webster, and more.</p>
+      </div>
+      <a href="/projects/Dictionfairy.html" class="logo-link"><img src="/imgs/df-icon-transparent.png" alt="Logo for dictionfairy"></a>
+    </div>
+    <div id="isaacfishercom-box" class="box scroll-fade-in">
+      <div class="box-text">
+        <h3><a href="/projects/IsaacFisherCom.html">isaac-fisher.com</a></h3>
+        <h4>Summer 2024 - Ongoing</h4>
+        <p>Behold. I'm starting from zero. That means practically no experience with HTML, CSS, or JavaScript - just a GitHub Pages repository and a dream. I'll be updating this regularly once it gets off the ground too.</p>
+      </div>
+      <a href="/projects/IsaacFisherCom.html" class="logo-link"><img src="/imgs/iflogo.JPG" alt="Logo for isaac-fisher.com"></a>
+    </div>
+    <div id="schlockfish-box" class="box scroll-fade-in">
+      <div class="box-text">
+        <h3><a href="/projects/Schlockfish.html">Schlockfish</a></h3>
+        <h4>Summer 2023</h4>
+        <p>Among the worst chess engines ever made, <a href="https://www.merriam-webster.com/dictionary/schlock" target="_blank">Schlock</a><a href="https://en.wikipedia.org/wiki/Stockfish_(chess)" target="_blank">fish</a> had a few simple rules: one week, no outside help, and find a use for some of that algorithms nonsense I've been learning. It works - just not well.</p>
+      </div> 
+      <a href="/projects/Schlockfish.html" class="logo-link"><img src="/imgs/schlockfish.jpg" alt="Logo for schlockfish"></a>
+    </div>
+    <div id="2048-box" class="box scroll-fade-in">
+      <div class="box-text">
+        <h3><a href="/projects/2048Simulator.html">2048 Simulator</a></h3>
+        <h4>Spring 2023</h4>
+        <p>It's exactly what it sounds like. This project was designed to imitate test-case writing by trying out different strategies for the 2048 game. It's rather versatile and gathers statistics from large-scale automated simulations. You could even write your own strategies, if you'd like.</p>
+      </div> 
+      <a href="/projects/2048Simulator.html" class="logo-link"><img src="/imgs/2048.jpg" alt="Logo for 2048 simulator"></a>      
+    </div>
+    <div id="mylikedlive-box" class="box scroll-fade-in">
+      <div class="box-text">
+        <h3><a href="/projects/MyLikedLive.html">My Liked, Live</a></h3>
+        <h4>Fall 2022</h4>
+        <p>A little app that logs into your Spotify, gathers your recent artists, and checks for local concerts. Yes, I beat Spotify to this. No, I never got a check.</p>
+      </div> 
+      <a href="/projects/MyLikedLive.html" class="logo-link"><img src="/imgs/yll.jpg" alt="Logo for my liked live"></a>   
+    </div>
+  </main>
+  <script>setupScrollFadeIn();</script>
+</body>
+</html>

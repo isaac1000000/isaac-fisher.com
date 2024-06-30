@@ -4,50 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isaac Fisher - Portfolio/2048 Simulator</title>
-  <link rel="stylesheet" href="../../css/normalize.css">
-  <link rel="stylesheet" href="../../css/core.css">
-  <link rel="stylesheet" href="../../css/project-core.css">
-  <script src="../../js/core.js"></script>
-  <script src="../../js/project.js"></script>  
-  <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap" rel="stylesheet">
-</head>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/core.css">
+  <link rel="stylesheet" href="/css/project-core.css">
+  <script src="/js/core.js"></script>
+  <script src="/js/project.js"></script>  
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin></head>
 <body>
-  <div class="navigation">
-    <div class="desktop-header">
-      <li><h1>if</h1></li>
-      <div class="site-links">
-        <li>
-          <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../Blog.html">Blog</a></li>
-            <li><a href="../Portfolio.html"  class="current-page">Portfolio</a></li>
-            <li><a href="../Photos.html">Photos</a></li>
-            <li><a href="../../files/FisherResumeForWebsite.pdf", target="_blank">Resume</a></li>
-            <li><a href="../Contact.html">Contact</a></li>
-          </ul>
-        </li>
-      </div>
-    </div>
-    <div class="mobile-header">
-      <li><h1>if</h1></li>
-      <div class="menu-dropdown">
-        <li><button class="menu-btn" onclick="dropMenu()"><img src="../../imgs/menu.svg" width="800" height="800"></button></li>
-        <div class="menu-content">
-          <div style="border-top: 1px solid white; width: 50%; margin: 0 auto;"></div>
-          <a href="../../index.html">Home</a>
-          <a href="../Blog.html">Blog</a>
-          <a href="../Portfolio.html">Portfolio</a>
-          <a href="../Photos.html">Photos and Food</a>
-          <a href="../../files/FisherResumeForWebsite.pdf", target="_blank">Download Resume (PDF)</a>
-          <a href="../Contact.html">Contact</a>
+  <header>
+    <nav id="site-navigation">
+      <div id="site-navigation-content">
+        <a href="/" id="logo">if</a>
+        <div id="nav-socials">
+          <a href="https://github.com/isaac1000000"><img src="/imgs/github-logo.svg" alt="github logo"></a>
+          <a href="https://www.linkedin.com/in/isaaclfisher/"><img src="/imgs/linkedin-logo.svg" alt="linkedin logo"></a>
+          <a href="mailto:isaac.fisher@nyu.edu"><img src="/imgs/mailto-logo.svg" alt="mail logo"></a>
+        </div>
+        <div id="nav-links-block">
+          <img src="/imgs/menu.svg" id="nav-menu-button" onclick="dropMenu()">
+          <div id="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/Blog.html">Blog</a>
+            <a href="/Portfolio.html" class="current">Portfolio</a>
+            <a href="/Food.html">Food</a>
+            <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a>
+            <a href="/Contact.html">Contact</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </nav>
+  </header>
   <main>
     <h1>2048 Simulator</h1>
     <h2>Spring 2023 - <a href="https://github.com/isaac1000000/2048simulator", target="_blank">https://github.com/isaac1000000/2048simulator</a> - Docs to come</h2>
-    <img src="../../imgs/2048.jpg" alt="2048 logo" id="project-logo">
+    <img src="/imgs/2048.jpg" alt="2048 logo" id="project-logo">
     <p class="main-text">
       I loved the 2048 game in high school. I never really paid attention to my high score, but it was fun to press some buttons in a pattern and see what would come of it. There was a lot of not-so-accurate mythology to it: never go down, never go the same direction twice, etc. I tried it all, and never found success. This is my answer - a test framework for 2048 strategies. It's portable and easy to write patterns for, especially if you're like me and never looked at the board anyways. The best I found was left-up-right-up, which doubled the average of the next highest pattern. If you ever find a repetitive strategy that gets to 2048, let me know. I've not managed it yet.
     </p>    

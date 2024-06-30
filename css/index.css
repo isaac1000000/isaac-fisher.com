@@ -9,7 +9,7 @@ main {
 	padding-bottom: 1rem;
 	margin-bottom: 16rem;
 	height: auto;
-	overflow: visible;
+	overflow-x: visible;
 }
 h2 {
 	margin-top: 0;
@@ -46,35 +46,49 @@ h2 {
 	font-size: 2vw;
 	text-align: right;
 	margin-bottom: 0;
-	margin-right: 5vw;
-	margin-top: 15vh;
-	float: right;
+	bottom: 27vh;
+	right: 5vw;
+	position: absolute;
 	opacity: 0;
 	display: inline-block;
 	animation: 3s fade-in-bottom;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
 }
-#down-arrow {
+#down-arrow-circled-svg {
 	height: 5rem;
+	width: 5rem;
 	position: absolute;
 	bottom: 5%;
 	left: calc(50% - 2.5rem);
+	opacity: 0;
+	animation: fade-in-bottom 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
 }
 #circle-path {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: dash 5s linear alternate infinite;
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+  stroke-dasharray: 105;
+  stroke-dataoffset: 105;
+  animation: cloud 2s linear;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
-
-@keyframes dash {
+@keyframes cloud {
   from {
-    stroke-dashoffset: 1;
+  	opacity: 1;
+    stroke-dashoffset: 105;
   }
   to {
+  	opacity: 1;
     stroke-dashoffset: 0;
   }
 }
+
 #main-box {
 	padding-top: 2rem;
 	height: 56rem;
@@ -182,10 +196,12 @@ h2 {
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
+
   }
 
   100% {
     transform: translateX(0);
+
   }
 }
 @keyframes slideInFromRightOffscreen {
@@ -242,11 +258,9 @@ h2 {
 }
 @keyframes fade-in-bottom {
   0% {
-    -webkit-transform: translateY(25px);
-    transform: translateY(25px);
+    transform: translateY(50px);
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
 
@@ -390,30 +404,21 @@ a#photos-link:hover {
 	bottom: 9rem;
 }
 .scrolled {
-	animation: fade-in-bottom .5s ease-out both;
+	animation: fade-in-bottom .75s ease-out both;
 	opacity: 1;
 }
 
-
 @media (max-width: 75rem){
 	body {
-		height: auto;
+		overflow: hidden;
+		width: 100vw;
 	}
 	main {
 		width: 100%;
 		margin-top: 9rem;
 		height: auto;
 		padding: 0;
-		padding-bottom: 17vw;
-	}
-	#main-title {
-		width: 90%;
-		margin: 10rem auto;
-	}
-	#main-desc {
-		border: 0;
-		width: 90%;
-		margin: 0 auto;
+		padding-bottom: 3rem;
 	}
 	#sketch-box {
 		display: none;
@@ -423,6 +428,7 @@ a#photos-link:hover {
 		border: 0;
 		height: auto;
 		margin: 0;
+		display: inline-block;
 	}
 	#about-me {
 		padding: 0;
@@ -440,33 +446,37 @@ a#photos-link:hover {
 		width: 100%;
 		right: 0;
 	}
-	#blog-desc {
-		display: none;
-	}
 	#blog-box {
 		width: 100vw;
 		border: 0;
 		height: auto;
 		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: row;
+		margin-top: 5rem;
+		row-gap: 2rem;
 	}
 	#post-box {
-		width: 80vw;
+		order: 2;
 		padding: 0;
-		margin: 0 10%;
-		margin-top: 2rem;
+		width: 50vw;
+		flex-basis: 100vw;
 	}
 	#post-box a {
-		width: 60vw;
-		height: auto;
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 1rem;
-		font-size: 2rem;
-		float: none;
-		line-height: 1;
+		font-size: 3vw;
 	}
-	#portfolio-desc {
-		display: none;
+	#blog-desc {
+		order: 1;
+		padding: 0;
+		border: 0;
+		text-align: left;
+		margin: 0 5vw;
+		width: 70vw;
+	}
+	#blog-desc h3 {
+		text-align: center;
 	}
 	#project-header {
 		display: block;
@@ -480,38 +490,64 @@ a#photos-link:hover {
 	}
 	#portfolio-box {
 		justify-content: space-around;
-		border: none;
+		margin-top: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: unset;
+		margin: 0 2vw;
+	}
+	#portfolio-desc {
+		padding: 0;
+		border: 0;
+		text-align: left;
+		margin: 0 5vw;
+		flex-basis: 100%;
+		width: 70vw;
+	}
+	#portfolio-desc h3 {
+		text-align: center;
 	}
 	#project-box {
-		width: 80vw;
-		height: 15vw;
-		float: none;
-		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		row-gap: 2rem;
+		width: 100vw;
 		padding: 0;
-		border-left: 0;
+		border: 0;
 	}
 	#project-box a {
-		padding: 0;
-		width: 15vw;
-		background-color: transparent;
-		text-rendering: none;
-		box-shadow: none;
-		line-height: 1;
-		display: block;
-	   box-shadow: -2px 5px 5px dimgray;	
+		width: 12rem;
 	}
-	#project-box #text:hover {
-		display: none;
-	}
-	#project-box img {
-		width: 15vw;
-		margin-top: 0;
-	}
-	.project-label {
-		display: none;
+	#project-header {
+		margin-bottom: 2rem;
 	}
 	a#photos-link {
-		display: none;
-		border: 0;
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 3rem;
+	}
+	#photos-link img {
+		width: 100%;
+		display: inline-block;
+	}
+}
+
+@media (max-width: 48rem) {
+	#landing {
+		min-height: 100vw;
+	}
+	#hi {
+		font-size: 15vw;
+	}
+	#im {
+		font-size: 15vw;
+	}
+	#isaac {
+		font-size: 25vw;
+	}
+	#main-desc {
+		font-size: 5vw;
 	}
 }

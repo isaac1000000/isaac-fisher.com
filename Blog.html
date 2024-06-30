@@ -4,45 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
   <title>Isaac Fisher - Blog</title>
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/core.css">
-  <link rel="stylesheet" href="../css/blog.css">
-  <script src="../js/core.js"></script> 
-  <script src="../js/blog.js"></script> 
-  <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/core.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <script src="/js/core.js"></script> 
+  <script src="/js/blog.js"></script> 
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-  <div class="navigation">
-    <div class="desktop-header">
-      <li><h1>if</h1></li>
-      <div class="site-links">
-        <li>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="Blog.html" class="current-page">Blog</a></li>
-            <li><a href="Portfolio.html">Portfolio</a></li>
-            <li><a href="Photos.html">Photos</a></li>
-            <li><a href="../files/FisherResumeForWebsite.pdf", target="_blank">Resume</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-          </ul>
-        </li>
-      </div>
-    </div>
-    <div class="mobile-header">
-      <li><h1>if</h1></li>
-      <div class="menu-dropdown">
-        <li><button class="menu-btn" onclick="dropMenu()"><img src="../imgs/menu.svg" width="800" height="800"></button></li>
-        <div class="menu-content">
-          <div style="border-top: 1px solid white; width: 50%; margin: 0 auto;"></div>
-          <a href="../index.html">Home</a>
-          <p>Blog</p>
-          <a href="../html/Portfolio.html">Portfolio</a>
-          <a href="../html/Photos.html">Photos and Food</a>
-          <a href="../files/FisherResumeForWebsite.pdf", target="_blank">Download Resume (PDF)</a>
-          <a href="../html/Contact.html">Contact</a>
+  <header>
+    <nav id="site-navigation">
+      <div id="site-navigation-content">
+        <a href="/" id="logo">if</a>
+        <div id="nav-socials">
+          <a href="https://github.com/isaac1000000"><img src="/imgs/github-logo.svg" alt="github logo"></a>
+          <a href="https://www.linkedin.com/in/isaaclfisher/"><img src="/imgs/linkedin-logo.svg" alt="linkedin logo"></a>
+          <a href="mailto:isaac.fisher@nyu.edu"><img src="/imgs/mailto-logo.svg" alt="mail logo"></a>
+        </div>
+        <div id="nav-links-block">
+          <img src="/imgs/menu.svg" id="nav-menu-button" onclick="dropMenu()">
+          <div id="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/Blog.html" class="current">Blog</a>
+            <a href="/Portfolio.html">Portfolio</a>
+            <a href="/Food.html">Food</a>
+            <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a>
+            <a href="/Contact.html">Contact</a>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
+  </header>
   </div>  
   <main>
     <div id="content">
@@ -62,7 +55,7 @@
       <article id="v010-and-the-virus-issue">
         <h2>v0.1.0 and the Virus Issue</h2>
         <h4>June 21, 2024</h4>
-        <p>The last few days have gone exclusively to Dictionfairy. There's a lot more new technology involved there than I expected. I've worked with PyQt6 (mostly templates and lots of prayer) and Selenium before, so I figured I'd be breezing through development. But wow, have there been a lot of things that have just halted the process completely. I've also been experimenting with Figma for app designs.<img src="../imgs/blog/virus-issue/dictionfairy-old.jpg" style="float: right; height: 250px; max-width: 75vw; padding-left: .5rem"> I really am new to the whole thing so it's been a lot of fun to play around with some ideas. This is how it stands now. I don't love any of the new ideas yet so I haven't gone through with the settings pages, but I thought I'd show this just for the fun of looking back on it later.<img src="../imgs/blog/virus-issue/dictionfairy-new.jpg" style="float: left; height: 700px; padding-right: .5rem"> Keep in mind that the default size for the app is 200x300 pixels, so I barely have any space to work with before it becomes completely unreadable.</p>
+        <p>The last few days have gone exclusively to Dictionfairy. There's a lot more new technology involved there than I expected. I've worked with PyQt6 (mostly templates and lots of prayer) and Selenium before, so I figured I'd be breezing through development. But wow, have there been a lot of things that have just halted the process completely. I've also been experimenting with Figma for app designs.<img src="/imgs/blog/virus-issue/dictionfairy-old.jpg" style="float: right; height: 250px; max-width: 75vw; padding-left: .5rem"> I really am new to the whole thing so it's been a lot of fun to play around with some ideas. This is how it stands now. I don't love any of the new ideas yet so I haven't gone through with the settings pages, but I thought I'd show this just for the fun of looking back on it later.<img src="/imgs/blog/virus-issue/dictionfairy-new.jpg" style="float: left; height: 700px; padding-right: .5rem"> Keep in mind that the default size for the app is 200x300 pixels, so I barely have any space to work with before it becomes completely unreadable.</p>
         <p>That's the fun part of the report for Dictionfairy. The not-so-fun part is about PyInstaller (oh my god, oh my god) and some other exciting issues w/r/t <code>keyboard</code>'s threading. I released the first alpha version of Dictionfairy through GitHub today. But PyInstaller, apparently, is prone to flagging Windows Defender as malware, which is not something I want on my name when the unsuspecting language enthusiast tries out my program. The bootloader gets recognized from other programs compiled through PyInstaller that may have done some not-so-good things. My workaround was grabbing an older (<6.0.0) version of PyInstaller, then manually recompiling the bootloader through VSCode's C++ compiler, then pip installing the local version of the library. After that it only got flagged on 3/75 malware detectors and ran on my machine, which is much better than 15/75 and a complete block without an exclusion. So anyways, I don't imagine I'll be doing desktop app development through Python probably ever again. This whole mess is making me look rather fondly on web development, so that's an exciting thing to explore after I wrap the pre-release phase of Dictionfairy up.</p>
         <p>The threading issue was a fun one because it was a nice nod to some of the techniques from my operating systems class this past semester. Although, to be honest, I didn't really fix the problem in a way that was best-practice for threads. But it works, so I'll take it. The issue is that the callback on <code>Keyboard</code>'s <code>add_hotkey()</code> executes in a new thread, and I use a ctrl+c hotkey to copy to the clipboard when the hotkey is triggered. Even though the hotkey is supposed to suppress all other uses of its keys, it was registering the shift modifier from my keybind (because it triggers on release, this is after I left go of the non-modifier key) while simultaneously calling ctrl+c, and switching to the Windows International Keyboard. I played with some threading tricks for a bit and ultimately ended up just releasing every key once the hotkey is registered, which isn't anything elegant but certainly works.</p>
         <p>If you'd like to test it out, you can download the .exe from <a href="https://github.com/isaac1000000/dictionfairy", target="_blank">my GitHub</a>, but I wouldn't blame you if the malware warning turns you away. The source code is probably the better option anyways. Apparently you can contact the antivirus developers to have your program whitelisted, so I'll look at that for the future. I'm going away for two weeks though, so it will have to be after that. Because Dictionfairy only works on Windows right now, I'll likely just be doing a blog post here and there on some readings. I've got some good Ibsen content lined up and I'll be starting Ulysses once I get through Herrndorf, so you have that to look forward to.</p>
@@ -157,7 +150,7 @@
       <p id="results-counter"></p>
     </div>
     <aside id="tag-menu">
-      <h3>Available tags:<button id="exit-tags-button"><img src="../imgs/exit-menu.svg"></button></h3>
+      <h3>Available tags:<button id="exit-tags-button"><img src="/imgs/exit-menu.svg"></button></h3>
       <ul>
         <li><button>#programming</button></li>
         <li><button>#german</button></li>
@@ -174,7 +167,7 @@
         <li><button>#java</button></li>
         <li><button>#c</button></li>
       </ul>
-      <button id="open-tags-button" ><img src="../imgs/open-sidebar-left.svg"></button>
+      <button id="open-tags-button" ><img src="/imgs/open-sidebar-left.svg"></button>
       <script>setupBlogButtons();</script>
     </aside>
   </main>
