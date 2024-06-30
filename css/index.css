@@ -17,7 +17,7 @@ h2 {
 }
 #landing {
 	height: 100vh;
-	min-height: 50rem;
+	min-height: 30rem;
 	padding-top: var(--nav-bar-height);
 	position: relative;
 }
