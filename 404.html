@@ -10,37 +10,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="navigation">
-    <div class="desktop-header">
-      <li><h1>if</h1></li>
-      <div class="site-links">
-        <li>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/html/Blog.html">Blog</a></li>
-            <li><a href="/html/Portfolio.html">Portfolio</a></li>
-            <li><a href="/html/Photos.html" class="current-page">Photos</a></li>
-            <li><a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a></li>
-            <li><a href="/html/Contact.html">Contact</a></li>
-          </ul>
-        </li>
-      </div>
-    </div>
-    <div class="mobile-header">
-      <li><h1>if</h1></li>
-      <div class="menu-dropdown">
-        <li><button class="menu-btn"><img src="/imgs/menu.svg" width="800" height="800"></button></li>
-        <div class="menu-content">
-          <a href="/index.html">Home</a>
-          <a href="/html/Blog.html">Blog</a>
-          <a href="/html/Portfolio.html">Portfolio</a>
-          <a href="/html/Photos.html">Photos and Food</a>
-          <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Download Resume (PDF)</a>
-          <a href="/html/Contact.html">Contact</a>
+  <header>
+    <nav id="site-navigation">
+      <div id="site-navigation-content">
+        <a href="/" id="logo">if</a>
+        <div id="nav-socials">
+          <a href="https://github.com/isaac1000000"><img src="/imgs/github-logo.svg" alt="github logo"></a>
+          <a href="https://www.linkedin.com/in/isaaclfisher/"><img src="/imgs/linkedin-logo.svg" alt="linkedin logo"></a>
+          <a href="mailto:isaac.fisher@nyu.edu"><img src="/imgs/mailto-logo.svg" alt="mail logo"></a>
+        </div>
+        <div id="nav-links-block">
+          <img src="/imgs/menu.svg" id="nav-menu-button" onclick="dropMenu()">
+          <div id="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/Blog.html">Blog</a>
+            <a href="/Portfolio.html">Portfolio</a>
+            <a href="/Food.html">Food</a>
+            <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a>
+            <a href="/Contact.html">Contact</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </nav>
+  </header>
   <main>
     <h1>Whoops!</h1>
     <p>Looks like you've ended up at a page that doesn't exist. Try again, or use the navigation bar at the top.</p>
