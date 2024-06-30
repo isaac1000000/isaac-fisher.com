@@ -41,10 +41,8 @@ const hideScrollElement = (element) => {
 const handleScrollAnimation = () => {
   const scrollElements = document.querySelectorAll(".scroll-fade-in");
   scrollElements.forEach((el) => {
-    if (elementInView(el, 1.25)) {
+    if (elementInView(el, 1.3)) {
       displayScrollElement(el);
-    } else if (elementOutOfView(el)){
-      hideScrollElement(el)
     }
   })
 }

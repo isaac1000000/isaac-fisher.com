@@ -4,50 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isaac Fisher - Portfolio/Schlockfish</title>
-  <link rel="stylesheet" href="../../css/normalize.css">
-  <link rel="stylesheet" href="../../css/core.css">
-  <link rel="stylesheet" href="../../css/project-core.css">
-  <script src="../../js/core.js"></script>
-  <script src="../../js/project.js"></script>  
-  <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/core.css">
+  <link rel="stylesheet" href="/css/project-core.css">
+  <script src="/js/core.js"></script>
+  <script src="/js/project.js"></script>  
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-  <div class="navigation">
-    <div class="desktop-header">
-      <li><h1>if</h1></li>
-      <div class="site-links">
-        <li>
-          <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../Blog.html">Blog</a></li>
-            <li><a href="../Portfolio.html"  class="current-page">Portfolio</a></li>
-            <li><a href="../Photos.html">Photos</a></li>
-            <li><a href="../../files/FisherResumeForWebsite.pdf", target="_blank">Resume</a></li>
-            <li><a href="../Contact.html">Contact</a></li>
-          </ul>
-        </li>
-      </div>
-    </div>
-    <div class="mobile-header">
-      <li><h1>if</h1></li>
-      <div class="menu-dropdown">
-        <li><button class="menu-btn" onclick="dropMenu()"><img src="../../imgs/menu.svg" width="800" height="800"></button></li>
-        <div class="menu-content">
-          <div style="border-top: 1px solid white; width: 50%; margin: 0 auto;"></div>
-          <a href="../../index.html">Home</a>
-          <a href="../Blog.html">Blog</a>
-          <a href="../Portfolio.html">Portfolio</a>
-          <a href="../Photos.html">Photos and Food</a>
-          <a href="../../files/FisherResumeForWebsite.pdf", target="_blank">Download Resume (PDF)</a>
-          <a href="../Contact.html">Contact</a>
+  <header>
+    <nav id="site-navigation">
+      <div id="site-navigation-content">
+        <a href="/" id="logo">if</a>
+        <div id="nav-socials">
+          <a href="https://github.com/isaac1000000"><img src="/imgs/github-logo.svg" alt="github logo"></a>
+          <a href="https://www.linkedin.com/in/isaaclfisher/"><img src="/imgs/linkedin-logo.svg" alt="linkedin logo"></a>
+          <a href="mailto:isaac.fisher@nyu.edu"><img src="/imgs/mailto-logo.svg" alt="mail logo"></a>
+        </div>
+        <div id="nav-links-block">
+          <img src="/imgs/menu.svg" id="nav-menu-button" onclick="dropMenu()">
+          <div id="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/Blog.html">Blog</a>
+            <a href="/Portfolio.html" class="current">Portfolio</a>
+            <a href="/Food.html">Food</a>
+            <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a>
+            <a href="/Contact.html">Contact</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </nav>
+  </header>
   <main>
     <h1>Schlockfish</h1>
     <h2>Summer 2023 - <a href="https://github.com/isaac1000000/schlockfish", target="_blank">https://github.com/isaac1000000/schlockfish</a></h2>
-    <img src="../../imgs/schlockfish.jpg" alt="schlockfish logo" id="project-logo">
+    <img src="/imgs/schlockfish.jpg" alt="schlockfish logo" id="project-logo">
     <p class="main-text">
       Schlockfish is the biggest failure I've ever produced and it's not even close. This is no surprise; I knew I'd be building a disaster from the start. Schlockfish was built in a week with no outside help or research, mostly during my shifts as a cashier at Staples. The project was designed conceptually to exercise two things. Firstly, my ability to problem-solve and meet a deadline; I wanted to be under pressure and alone, way over my head in a topic filled with nuance and challenge. Second, I needed a way to play with and apply the data structures I'd learned about in the spring semester. I knew I'd never get a chess engine to beat me naturally, but I did build a chess engine. And it beat me if I let it.
     </p>    

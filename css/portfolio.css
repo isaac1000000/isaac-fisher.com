@@ -28,9 +28,15 @@ main p {
 	margin-top: 10rem;
 	height: 37rem;
 }
-.box img {
+.logo-link {
 	width: 25rem;
-	height: 25rem;
+	height: 25rem;	
+	float: right;
+	margin-left: 3rem;
+}
+.box img {
+	width: inherit;
+	height: inherit;
 	background-color: white;
 	border-radius: 10px;
 	border: .5rem solid black;
@@ -43,22 +49,6 @@ main p {
 .box-text {
 	width: 47rem;
 	height: 100%;
-}
-.text-right img {
-	float: left;
-	margin-right: 3rem;
-}
-.text-right .box-text {
-	text-align: right;
-	float: right;
-	padding-left: 3rem;
-	border-left: 1px solid black;
-}
-.text-left img {
-	float: right;
-	margin-left: 3rem;
-}
-.text-left .box-text {
 	text-align: left;
 	float: left;
 	padding-right: 3rem;
@@ -83,40 +73,45 @@ main p {
 }
 @media (max-width: 75rem){
 	main {
-		margin-top: 9rem;
+		margin-top: var(--nav-bar-height);
 		width: 100%;
+		padding: 0;
+		margin-left: 3vw;
+	}
+	h3 {
+		margin: 0;
 	}
 	h5 {
 		width: 100%;
 		display: inline-block;
 	}
-	#hint-container {
-		width: 100%;
-		text-align: center;
-		margin: 0 auto;
-	}
 	.box {
-		display: block;
-		height: auto;
+		display: flex;
+		flex-direction: row;
+		margin-top: 3rem;
+		column-gap: 2vw;
+		padding: 0;
+		height: calc(40rem - 25vw);
 	}
-	.text-left .box-text, .text-right .box-text{
+	.box-text{
 		width: 90%;
+		max-width: 65vw;
 		padding: 0;
 		border: 0;
+		margin: 0;
+		height: unset;
 	}
-	.box-text {
-		margin: 0 5%;
-	}
-	.box img {
+	.logo-link {
+		width: 27vw;
+		height: unset;
 		float: none;
-		width: 100%;
-		height: auto;
+		position: relative;
+		bottom: 0;
+		display: inline-block;
 		margin: 0;
 	}
-	.box a:not(.box-text a) {
-		width: 70%;
-		max-width: 25rem;
-		margin: 0 auto;
+	.logo-link img {
 		display: block;
+		margin: 0;
 	}
 }
