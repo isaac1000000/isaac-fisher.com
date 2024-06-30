@@ -209,6 +209,11 @@ h2 {
 @keyframes slideInFromBottomBounce {
 	0% {
 		transform: translateY(100vh);
+		font-size: 4vw;
+	}
+	10% {
+		transform: translateY(100vh);
+		font-size: 12vw;
 	}
 	20% {
 		transform: translateY(100vh);
