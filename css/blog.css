@@ -179,3 +179,9 @@ aside ul::-webkit-scrollbar-thumb {
 		width: 100%;
 	}
 }
+@media (max-width: 30rem) {
+	aside button:hover {
+		color: black;
+		background-color: white;
+	}
+}

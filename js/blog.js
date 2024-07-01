@@ -30,7 +30,6 @@ function setupBlogButtons() {
 	var results = posts.length;
 	resultCounter.innerText = generateResultsText(results);
 
-
 	// Resets all posts, then deletes the ones that don't share a tag with the active tags
 	function handleTagClick() {
 		results = posts.length;
@@ -51,6 +50,18 @@ function setupBlogButtons() {
 		}
 		resultCounter.innerText = generateResultsText(results);
 	}
+
+	// Get passed tags
+	const urlParams = new URLSearchParams(window.location.search);
+	const passedTags = urlParams.getAll('tags');
+	passedTags.forEach((tag) => {
+		document.querySelectorAll("#tag-menu li button").forEach((button) => {
+			if (button.innerHTML == tag) {
+				button.classList.add("active");
+				handleTagClick()
+			}
+		})
+	});
 }
 
 function generateResultsText(num) {
