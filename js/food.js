@@ -16,6 +16,6 @@ function hideRightArrow() {
   }
 }
 
-element.addEventListener("wheel", () => {
+window.addEventListener("scroll", () => {
   throttle(hideRightArrow, 250)
 })
