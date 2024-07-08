@@ -68,6 +68,7 @@ main {
 	width: 40vh;
 	font-size: 5vh;
 }
+/*
 .pic-box:hover {
 	background-color: black;
 	color: white;
@@ -75,6 +76,7 @@ main {
 .pic-box:hover img {
 	box-shadow: none;
 }
+*/
 #right-arrow {
 	position: fixed;
 	right: 1rem;
