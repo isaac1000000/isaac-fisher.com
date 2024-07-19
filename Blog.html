@@ -51,8 +51,28 @@
           <li>#example</li>
         </ul>
       </article>
-      -->
-      <article id="patcher-and-the-pye">
+      -->      
+      <article id="spring-boot-camp">
+        <h2>Spring Boot Camp</h2>
+        <h4>July 18, 2024</h4>
+        <p>I've been prototyping my next project. The working idea is a generator for word groups, where "nets" are created based on user-provided word frequency and correlation strength constraints. It'll help advanced language learners to build subject vocabulary that isn't so direct. So far, it's a PostgreSQL database that I feed with a Python script, a Spring Boot application with a REST API and a React.js page to make use of it all. The Postgres database is filled with words and their relationships from several articles; right now it's based on proximity, where every word within a 5 word radius is considered a "connection," then the strength of the connection is calculated according to the frequency of the word and the number of connections between each pair of words. After just a few Wikipedia articles it's pretty accurate - "species" matches with "animal", "golf" with "ball", etc.</p> 
+        <p>I've never worked with Postgres (or SQL for that matter), so the first <code>SELECT</code> queries I wrote were somewhere in the ballpark of 3s execution time. Not impressive for 40-something-thousand rows, but after some tweaking and a <em>lot</em> of doc research (I got sidetracked with the inner mechanics of compound keys) I realized I'd been summing up the count of the words for each row, which was very obviously not fast. I managed to bring it down to a tenth of a second, which is much better. I also brought down the write time of my Python (psycopg2 is wonderful, by the way) script from an initial 6 minutes to about 15 seconds by using views to fetch data instead of calculating the strength at insert time. I think for the final product I might even do away with the update model I have and instead insert every connection individually, then just count the number of times each appears. I'll be doing some speed tests on both models at some point, but for now I'm satisfied. It doesn't matter much because Spring's JPA library loads the database fully at startup anyways, and any inserts to my database happen behind-the-scenes - but man, it feels good to see the execution time go down on a query.</p>
+        <p>I'm very happy with Spring Boot as well. The annotations are a lot, but they're mostly intuitive and I appreciate that Spring does my dependency injection and my IDE does all my imports. I find Java to be a relaxing environment because it's so strict and there's never a question of where things went wrong. React, on the other hand, feels like a complete dice roll every refresh. I'm a JS hater (so unique, I know), so it's extra painful, but I'll slog through the dozen or so components I need to add, then be more thorough for the final product. After that, I'll be working with Docker to containerize the prototype, but likely not deploying until I've finished with React, rebuilt everything, included unit tests (being away from Java for so long has me homesick for JUnit), and finalized the read-only database. I'm undecided between trying to host over the AWS free tier or my CS department's free linux server, but that comes after all the things I just mentioned.</p>
+        <p>On the life side, I'm hunting for apartments (spending hours on Excel gimmicks) and planning a tasting menu for 8 or so people this weekend. I'll be posting pictures. Also, Sebald's <em>Austerlitz</em> just got eighth place on NYT's "100 Best Books of the Century" list, which is super cool as both my favorite book and more generally as representation for contemporary German literature. If you haven't read it, I can't recommend it enough - and I've heard great things about the English version.</p>
+        <ul class="tags">
+          Tags:
+          <li>#programming</li>
+          <li>#current-project</li>
+          <li>#german</li>
+          <li>#general</li>
+          <li>#reading</li>
+          <li>#javascript</li>
+          <li>#python</li>
+          <li>#java</li>
+        </ul>
+      </article>
+
+      <article id="patcher-and-the-py">
         <h2>Patcher and the Py(Test)</h2>
         <h4>July 9, 2024</h4>
         <p>A big week for dictionfairy - yesterday, I released patch 0.2.0, which has some minor bug fixes and a couple of nice new features. It's now possible to edit hotkeys in the settings menu, which is a big step as far as features go, and there's a new edit-in-place capability that is helpful when the selected word doesn't copy completely right. Neither of them are particularly complicated. I've not published it yet, but I also worked with the GNU gettext module to add support for German. I hope to add French soon (my French sucks) and maybe Spanish if I can steal a Spanish-speaking friend for an hour or so. I'm also going to be adding more built-in dictionaries (most likely en->en, fr->fr, maybe en->fr and en->de or es?), sprucing up the GUI with some stylesheets, and adding a generic dictionary tool that should be a major highlight. I picture it as an interface where the user gives a web link and Selenium selection scheme (making it intuitive will be the hard part), then maybe some rules for cleaning up the response. I'll save this and add it into the list of acceptable dictionaries in settings. I'm also working on some unit tests with PyTest, but I'm a bit stuck on testing Selenium and the Keyboard module. I'm not really sure how to even start considering they depend on either user interaction or an instance of a GUI, so I'll be working on that on the side as well.</p>
@@ -200,6 +220,7 @@
         <li><button>#general</button></li>
         <li><button>#food</button></li>
         <li><button>#reading</button></li>
+        <li><button>#current-project</button></li>
         <li><button>#isaac-fisher.com</button></li>
         <li><button>#dictionfairy</button></li>
         <li><button>#schlockfish</button></li>
