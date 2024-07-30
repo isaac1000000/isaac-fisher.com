@@ -395,7 +395,7 @@ a#photos-link:hover {
 	height: 14rem;
 	width: 74rem;
 	object-fit: cover;
-	object-position: 25% 25%;
+	object-position: 50% 40%;
 	z-index: 0;
 }
 #photos-link h2 {

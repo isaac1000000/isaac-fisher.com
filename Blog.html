@@ -51,18 +51,35 @@
           <li>#example</li>
         </ul>
       </article>
-      -->      
+      -->
+      
+      <article id="docked-and-loaded">
+        <h2>Docked and Loaded</h2>
+        <h4>July 30, 2024</h4>
+        <p>It's been a busy few weeks. I'm working right now on the production version of my app flexicon (like, flexible lexicon. Clever?), which has definitely been a trip getting started.  So far I've generated a partial but production-worthy dataset from Wikipedia dumps. At time of writing it's 370-something-thousand words and about 27 million word connections (~15 million unique). A fun little thing I implemented was a hashing scheme to create integer keys from a word to speed up searching dramatically. I wanted to stay within Postgres's 8-byte bigint type and also have easy, fast, and platform-independent access to the hashing algorithm. Cryptographic or not was irrelevant, I wasn't hiding any information. I couldn't find anything 64-bit and worthwhile so I played around a bit and discovered that a truncation of 16-byte md5 has zero collisions in the English dictionary I used for the wordlist, and comes prepackaged in Postgres, Python, and Java. I just needed to make sure that my Python or Java byte-to-int translations are signed and big-endian (Postgres default, much easier to convert outside of the convoluted plpgsql) and I'm good to go with lightning-fast word but also relationship searches. The composite two-bigint key does much better than searching for two text columns and was also a fun little dive into cryptography that I didn't expect for this project.</p>
+        <p>Since then I've worked on my Spring Boot REST API and set up Docker compose schemes for that and the database. Docker feels sort of magic, honestly. I'm excited to see how it fares with deploying since that seems to be the main benefit from what I've read. But it's a nice and mostly intuitive environment for development, maybe not as elegant on Windows but not bad enough to complain about. I do wish there were better documentation though. I'm really doing my best to keep everything tight, clean, and professional, because I hope to scale it a bit past just the word generator and Anki deck creator - maybe add logins to save user flashcard sets or something.</p>
+        <p>I'm moving back to New York sometime in the next few weeks, so posts might be sparse as things get more hectic. And, more generally, job hunting season starts soon, so expect occasional updates on that.</p>
+        <ul class="tags">
+          Tags:
+          <li>#programming</li>
+          <li>#general</li>
+          <li>#flexicon</li>
+          <li>#python</li>
+          <li>#java</li>
+        </ul>
+      </article>
+
       <article id="spring-boot-camp">
         <h2>Spring Boot Camp</h2>
         <h4>July 18, 2024</h4>
-        <p>I've been prototyping my next project. The working idea is a generator for word groups, where "nets" are created based on user-provided word frequency and correlation strength constraints. It'll help advanced language learners to build subject vocabulary that isn't so direct. So far, it's a PostgreSQL database that I feed with a Python script, a Spring Boot application with a REST API and a React.js page to make use of it all. The Postgres database is filled with words and their relationships from several articles; right now it's based on proximity, where every word within a 5 word radius is considered a "connection," then the strength of the connection is calculated according to the frequency of the word and the number of connections between each pair of words. After just a few Wikipedia articles it's pretty accurate - "species" matches with "animal", "golf" with "ball", etc.</p> 
+        <p>I've been prototyping my next project. The working idea is a generator for word groups where "nets" are created based on user-provided word frequency and correlation strength constraints. It'll help advanced language learners to build subject vocabulary that isn't so direct. So far, it's a PostgreSQL database that I feed with a Python script, a Spring Boot application with a REST API and a React.js page to make use of it all. The Postgres database is filled with words and their relationships from several articles; right now it's based on proximity, where every word within a 5 word radius is considered a "connection," then the strength of the connection is calculated according to the frequency of the word and the number of connections between each pair of words. After just a few Wikipedia articles it's pretty accurate - "species" matches with "animal", "golf" with "ball", etc.</p> 
         <p>I've never worked with Postgres (or SQL for that matter), so the first <code>SELECT</code> queries I wrote were somewhere in the ballpark of 3s execution time. Not impressive for 40-something-thousand rows, but after some tweaking and a <em>lot</em> of doc research (I got sidetracked with the inner mechanics of compound keys) I realized I'd been summing up the count of the words for each row, which was very obviously not fast. I managed to bring it down to a tenth of a second, which is much better. I also brought down the write time of my Python (psycopg2 is wonderful, by the way) script from an initial 6 minutes to about 15 seconds by using views to fetch data instead of calculating the strength at insert time. I think for the final product I might even do away with the update model I have and instead insert every connection individually, then just count the number of times each appears. I'll be doing some speed tests on both models at some point, but for now I'm satisfied. It doesn't matter much because Spring's JPA library loads the database fully at startup anyways, and any inserts to my database happen behind-the-scenes - but man, it feels good to see the execution time go down on a query.</p>
         <p>I'm very happy with Spring Boot as well. The annotations are a lot, but they're mostly intuitive and I appreciate that Spring does my dependency injection and my IDE does all my imports. I find Java to be a relaxing environment because it's so strict and there's never a question of where things went wrong. React, on the other hand, feels like a complete dice roll every refresh. I'm a JS hater (so unique, I know), so it's extra painful, but I'll slog through the dozen or so components I need to add, then be more thorough for the final product. After that, I'll be working with Docker to containerize the prototype, but likely not deploying until I've finished with React, rebuilt everything, included unit tests (being away from Java for so long has me homesick for JUnit), and finalized the read-only database. I'm undecided between trying to host over the AWS free tier or my CS department's free linux server, but that comes after all the things I just mentioned. I've also not forgotten about Anki integration - that will come, but I'd like to get the rest off the ground first.</p>
         <p>On the life side, I'm hunting for apartments (spending hours on Excel gimmicks) and planning a tasting menu for 8 or so people this weekend. I'll be posting pictures. Also, Sebald's <em>Austerlitz</em> just got eighth place on NYT's "100 Best Books of the Century" list, which is super cool as both my favorite book and more generally as representation for contemporary German literature. If you haven't read it, I can't recommend it enough - and I've heard great things about the English version.</p>
         <ul class="tags">
           Tags:
           <li>#programming</li>
-          <li>#current-project</li>
+          <li>#flexicon</li>
           <li>#german</li>
           <li>#general</li>
           <li>#reading</li>
@@ -220,17 +237,13 @@
         <li><button>#general</button></li>
         <li><button>#food</button></li>
         <li><button>#reading</button></li>
-        <li><button>#current-project</button></li>
+        <li><button>#flexicon</button></li>
         <li><button>#isaac-fisher.com</button></li>
         <li><button>#dictionfairy</button></li>
-        <li><button>#schlockfish</button></li>
-        <li><button>#2048simulator</button></li>
-        <li><button>#mylikedlive</button></li>
         <li><button>#javascript</button></li>
         <li><button>#css</button></li>
         <li><button>#python</button></li>
         <li><button>#java</button></li>
-        <li><button>#c</button></li>
       </ul>
       <button id="open-tags-button" ><img src="/imgs/open-sidebar-left.svg"></button>
       <script>setupBlogButtons();</script>
