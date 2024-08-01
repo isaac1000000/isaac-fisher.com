@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isaac Fisher - Portfolio/Schlockfish</title>
+  <title>Isaac Fisher - Portfolio/flexicon</title>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/core.css">
   <link rel="stylesheet" href="/css/project-core.css">
@@ -37,20 +37,21 @@
     </nav>
   </header>
   <main>
-    <h1>Schlockfish</h1>
-    <h2>Summer 2023 - <a href="https://github.com/isaac1000000/schlockfish", target="_blank">https://github.com/isaac1000000/schlockfish</a></h2>
-    <img src="/imgs/schlockfish.jpg" alt="schlockfish logo" id="project-logo">
+    <h1>flexicon</h1>
+    <h2>Summer 2024 - <a href="https://github.com/stars/isaac1000000/lists/flexicon" target="_blank">https://github.com/stars/isaac1000000/lists/flexicon</a></h2>
+    <img src="/imgs/flexicon.png" alt="if logo" id="project-logo">
     <p class="main-text">
-      Schlockfish is the biggest failure I've ever produced and it's not even close. This is no surprise; I knew I'd be building a disaster from the start. Schlockfish was built in a week with no outside help or research, mostly during my shifts as a cashier at Staples. The project was designed conceptually to exercise two things. Firstly, my ability to problem-solve and meet a deadline; I wanted to be under pressure and alone, way over my head in a topic that I'd never touched before. Second, I needed a way to play with and apply the data structures I'd learned about in the spring semester. I knew I'd never get a chess engine to beat me naturally, but I did build a chess engine. And it beat me if I let it.
+      Flexicon is my way of giving back to the language learning community that's been so good to me through my years learning German. I wanted to build something new, something useful, and something that would let me experiment with technologies I hadn't used before. I settled on flexicon, a web app built with PostgreSQL, Python scripts, Spring Boot, and React.js, then containerized it all in Docker to deploy. The database is filled with networks of words that often appear next to each other in a variety of texts, and users can create, practice, and download flashcard sets according to their choices of subject, relevance, and obscurity.
     </p>    
     <div id="related-posts">
       <h3>Related Posts</h3>
       <div id="related-links">
-        <a>None yet. Check later!</a>
+        <a href="/Blog.html?tags=%23flexicon#docked-and-loaded">Docked and Loaded</a>
+        <a href="/Blog.html?tags=%23flexicon#spring-boot-camp">Spring Boot Camp</a>
       </div>
     </div> 
     <p class="main-text">
-      Schlockfish is built from nothing but pure Python. The engine is driven by a depth-first-search algorithm that ranks possible board states and makes a decision on the next move based on the results of optimal decisions from both sides. It operates now at a maximum depth of 3 - anything deeper never finished running on my machine. That is to say, if you can give the engine checkmate in 3, it'll win. If I had had it on hand, I would have let the program run and fill out best moves in a database on my Raspberry Pi to try to reach a higher depth. But I didn't, so enjoy the worst chess engine ever made in all its mistakes and failures.
+      The flexicon Postgres database currently contains about 30 million entries that each represent a connection between two words. From this data, my Spring Boot app sends tailored responses to the front-facing React page. I'd never used Postgres or Docker before this project, but after a few smaller scale experiments, extensive prototyping, then finally polishing the more professional, better documented production version that runs now, I've gotten more comfortable with this stack than probably any other. Most of all, though, I hope that someone out there finds use in this project. With it I'd like to contribute to the language learning ecosystem that's been such a rewarding part of my academic experience so far. 
     </p>
   </main>
 </body>
