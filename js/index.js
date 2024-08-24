@@ -48,8 +48,8 @@ const handleScrollAnimation = () => {
 }
 
 const sketchSrcs = [
-  "/imgs/sketches/sketch.jpeg",
   "/imgs/sketches/sketch2.jpg",
+  "/imgs/sketches/sketch.jpeg",
   "/imgs/sketches/sketch3.jpg",
   "/imgs/sketches/sketch4.jpg",
   "/imgs/sketches/sketch5.jpg",
