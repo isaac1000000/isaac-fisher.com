@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Fisher - Portfolio/2048 Simulator</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/core.css">
+  <link rel="stylesheet" href="/css/project-core.css">
+  <script src="/js/core.js"></script>
+  <script src="/js/project.js"></script>  
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/files/fonts/brawler-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin></head>
+<body>
+  <header>
+    <nav id="site-navigation">
+      <div id="site-navigation-content">
+        <a href="/" id="logo">if</a>
+        <div id="nav-socials">
+          <a href="https://github.com/isaac1000000"><img src="/imgs/github-logo.svg" alt="github logo"></a>
+          <a href="https://www.linkedin.com/in/isaaclfisher/"><img src="/imgs/linkedin-logo.svg" alt="linkedin logo"></a>
+          <a href="mailto:isaac.fisher@nyu.edu"><img src="/imgs/mailto-logo.svg" alt="mail logo"></a>
+        </div>
+        <div id="nav-links-block">
+          <img src="/imgs/menu.svg" id="nav-menu-button" onclick="dropMenu()">
+          <div id="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/Blog.html">Blog</a>
+            <a href="/Portfolio.html" class="current">Portfolio</a>
+            <a href="/Food.html">Food</a>
+            <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a>
+            <a href="/Contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Palettemate</h1>
+    <h2>Fall 2024 <a href="https://github.com/isaac1000000/Palettemate", target="_blank">https://github.com/isaac1000000/Palettemate</a></h2>
+    <img src="/imgs/palettemate.png" alt="palettemate logo" id="project-logo">
+    <p class="main-text">
+      Palettemate is designed to help painters source their palettes across brands and lines, without the hassle of cross-referencing each brand's catalogue. Users can create palettes by viewing a list of swatches and paint information, then building a viewable collection of the paints they'd like to purchase. In fact, the entire palette can be opened at once at the store source to speed up the process.
+    </p>    
+    <div id="related-posts">
+      <h3>Related Posts</h3>
+      <div id="related-links">
+        <a href="/Blog.html?tags=%23palettemate#back-from-the-dead">Back From the Dead</a>
+      </div>
+    </div> 
+    <p class="main-text">
+      This project was my final project for my Applied Internet Technologies class and was built with Express, Postgres, and lots of client-side Javascript. The pages are templated with Handlebars. It's built of ancient technology, but was a valuable lesson in building projects on a time and research budget. I also had lots of fun with the Postgres queries because it was my first experience with more traditional user objects and database schemes. Palettemate was a short exercise in building the foundations of a scalable web app.
+    </p>
+  </main>
+</body>
+</html>
