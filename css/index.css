@@ -463,7 +463,12 @@ a#photos-link:hover {
 		flex-basis: 100vw;
 	}
 	#post-box a {
-		font-size: 3vw;
+		padding: .75rem;
+		line-height: 1.15;
+		font-size: calc(3vw + 8px);
+	}
+	#post-box a#most-recent-post {
+		font-size: calc(3.5vw + 14px);
 	}
 	#blog-desc {
 		order: 1;
