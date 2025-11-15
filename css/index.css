@@ -499,6 +499,9 @@ a#third-recent-post {
 	#project-header {
 		margin-bottom: 2rem;
 	}
+	#note-box {
+		padding: 0 10%;
+	}
 }
 
 @media (max-width: 48rem) {
