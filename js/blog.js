@@ -37,6 +37,13 @@ function setupBlogButtons() {
 			post.style.display = "block";
 		})
 		const activeTags = [...document.querySelectorAll("#tag-menu li button.active")].map(x => x.innerHTML);
+		const appliedCount = document.getElementById("applied-tags-count-label")
+		appliedCount.innerText = activeTags.length > 0 ? `${activeTags.length} tags applied` : ''
+		if (activeTags.length === 0) {
+			appliedCount.style.display = 'none';
+		} else {
+			appliedCount.style.display = 'block';
+		}
 		if (activeTags.length > 0) {
 			results = 0;
 			postTags.forEach((tags, post) => {

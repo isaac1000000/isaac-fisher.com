@@ -70,7 +70,7 @@ aside.active {
 	background-color: white;
 	border: .5rem solid black;
 }
-aside h3 {
+aside h3, #applied-tags-count-label {
 	display: none;
 	background-color: black;
 	color: white;
@@ -81,9 +81,13 @@ aside h3 {
 	white-space: nowrap;
 	height: 2rem;
 }
-aside.active h3 {
+aside.active h3, #applied-tags-count-label {
 	display: flex;
 	justify-content: space-between;
+}
+#applied-tags-count-label {
+	display: none;
+	font-size: 1rem
 }
 aside ul {
 	display: none;
