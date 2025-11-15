@@ -499,15 +499,6 @@ a#third-recent-post {
 	#project-header {
 		margin-bottom: 2rem;
 	}
-	a#photos-link {
-		width: 90%;
-		margin: 0 auto;
-		margin-top: 3rem;
-	}
-	#photos-link img {
-		width: 100%;
-		display: inline-block;
-	}
 }
 
 @media (max-width: 48rem) {
