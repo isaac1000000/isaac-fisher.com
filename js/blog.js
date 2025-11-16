@@ -38,7 +38,7 @@ function setupBlogButtons() {
 		})
 		const activeTags = [...document.querySelectorAll("#tag-menu li button.active")].map(x => x.innerHTML);
 		const appliedCount = document.getElementById("applied-tags-count-label")
-		appliedCount.innerText = activeTags.length > 0 ? `${activeTags.length} tags applied` : ''
+		appliedCount.innerText = activeTags.length > 1 ? `${activeTags.length} tags applied` : activeTags.length === 1 ? '1 tag applied' : ''
 		if (activeTags.length === 0) {
 			appliedCount.style.display = 'none';
 		} else {
