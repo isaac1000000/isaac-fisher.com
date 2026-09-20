@@ -4,54 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isaac Fisher - Portfolio/flexicon</title>
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/core.css">
-  <link rel="stylesheet" href="/css/project-core.css">
-  <script src="/js/core.js"></script>
-  <script src="/js/project.js"></script>  
-  <link rel="preload" href="/files/fonts/brawler-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/files/fonts/brawler-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <style>body { max-width: 600px; padding: 40px 20px; }</style>
 </head>
 <body>
-  <header>
-    <nav id="site-navigation">
-      <div id="site-navigation-content">
-        <a href="/" id="logo">if</a>
-        <div id="nav-socials">
-          <a href="https://github.com/isaac1000000"><img src="/imgs/github-logo.svg" alt="github logo"></a>
-          <a href="https://www.linkedin.com/in/isaaclfisher/"><img src="/imgs/linkedin-logo.svg" alt="linkedin logo"></a>
-          <a href="mailto:isaac.fisher@nyu.edu"><img src="/imgs/mailto-logo.svg" alt="mail logo"></a>
-        </div>
-        <div id="nav-links-block">
-          <img src="/imgs/menu.svg" id="nav-menu-button" onclick="dropMenu()">
-          <div id="nav-links">
-            <a href="/index.html">Home</a>
-            <a href="/Blog.html">Blog</a>
-            <a href="/Portfolio.html" class="current">Portfolio</a>
-            <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a>
-            <a href="/Contact.html">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
   <main>
     <h1>flexicon</h1>
-    <h2>Summer 2024 - <a href="https://github.com/stars/isaac1000000/lists/flexicon" target="_blank">https://github.com/stars/isaac1000000/lists/flexicon</a></h2>
-    <img src="/imgs/flexicon.png" alt="if logo" id="project-logo">
-    <p class="main-text">
+    <h2>Summer 2024</h2>
+    <p><a href="https://github.com/stars/isaac1000000/lists/flexicon" target="_blank">https://github.com/stars/isaac1000000/lists/flexicon</a></p>
+    <p>
       Flexicon is my way of giving back to the language learning community that's been so good to me through my years learning German. I wanted to build something new, something useful, and something that would let me experiment with technologies I hadn't used before. I settled on flexicon, a web app built with PostgreSQL, Python scripts, Spring Boot, and React.js, then containerized it all in Docker to deploy. The database is filled with networks of words that often appear next to each other in a variety of texts, and users can create, practice, and download flashcard sets according to their choices of subject, relevance, and obscurity.
-    </p>    
-    <div id="related-posts">
-      <h3>Related Posts</h3>
-      <div id="related-links">
-        <a href="/Blog.html?tags=%23flexicon#docked-and-loaded">Docked and Loaded</a>
-        <a href="/Blog.html?tags=%23flexicon#spring-boot-camp">Spring Boot Camp</a>
-      </div>
-    </div> 
-    <p class="main-text">
-      The flexicon Postgres database currently contains about 30 million entries that each represent a connection between two words. From this data, my Spring Boot app sends tailored responses to the front-facing React page. I'd never used Postgres or Docker before this project, but after a few smaller scale experiments, extensive prototyping, then finally polishing it into the more professional, better documented production version that runs now, I've gotten more comfortable with this stack than probably any other. I hope that someone out there finds use in this project - I'd like to contribute to the language learning ecosystem that's been such a rewarding part of my life so far. 
     </p>
+    
   </main>
 </body>
 </html>

@@ -4,55 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isaac Fisher - Portfolio/Dictionfairy</title>
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/core.css">
-  <link rel="stylesheet" href="/css/project-core.css">
-  <script src="/js/core.js"></script>
-  <script src="/js/project.js"></script>  
-  <link rel="preload" href="/files/fonts/brawler-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/files/fonts/brawler-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <style>body { max-width: 600px; padding: 40px 20px; }</style>
 </head>
 <body>
-  <header>
-    <nav id="site-navigation">
-      <div id="site-navigation-content">
-        <a href="/" id="logo">if</a>
-        <div id="nav-socials">
-          <a href="https://github.com/isaac1000000"><img src="/imgs/github-logo.svg" alt="github logo"></a>
-          <a href="https://www.linkedin.com/in/isaaclfisher/"><img src="/imgs/linkedin-logo.svg" alt="linkedin logo"></a>
-          <a href="mailto:isaac.fisher@nyu.edu"><img src="/imgs/mailto-logo.svg" alt="mail logo"></a>
-        </div>
-        <div id="nav-links-block">
-          <img src="/imgs/menu.svg" id="nav-menu-button" onclick="dropMenu()">
-          <div id="nav-links">
-            <a href="/index.html">Home</a>
-            <a href="/Blog.html">Blog</a>
-            <a href="/Portfolio.html" class="current">Portfolio</a>
-            <a href="/files/FisherResumeForWebsite.pdf", target="_blank">Resume</a>
-            <a href="/Contact.html">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
   <main>
     <h1>Dictionfairy</h1>
-    <h2>Summer 2024 - <a href="https://github.com/isaac1000000/dictionfairy" target="_blank">https://github.com/isaac1000000/dictionfairy</a></h2>
-    <img src="/imgs/df-icon-transparent.png" alt="dictionfairy logo" id="project-logo">
-    <p class="main-text">
+    <h2>Summer 2024</h2>
+    <p><a href="https://github.com/isaac1000000/dictionfairy" target="_blank">https://github.com/isaac1000000/dictionfairy</a></p>
+    <p>
       Dictionfairy solves a simple problem. When I'm reading something, I may need to look up a word. But then I'd have to open a new tab (or, even worse, a whole browser!), navigate the dictionary, then <em>finally</em> search my word. But not anymore - Dictionfairy hangs around above other tabs and waits for a hotkey. Depending on the hotkey, you'll get instant results for either the word you've already selected or the next word you click on your screen. It's that simple. You can choose the dictionary you'd like to use for your words; as of right now, Dictionfairy comes with support for dwds.de (de-de), leo.org (de-en), WordReference.com (fr-en), and Merriam-Webster (en-en). The app also includes functionality for configuring your preferred dictionary if you'd like to get results in a language I haven't added yet. You'll find instructions for this (and more!) in the docs, and you can download Dictionfairy from the GitHub link above.
-    </p>    
-    <div id="related-posts">
-      <h3>Related Posts</h3>
-      <div id="related-links">
-        <a href="/Blog.html?tags=%23dictionfairy#patcher-and-the-py">Patcher and the Py(Test)</a>
-        <a href="/Blog.html?tags=%23dictionfairy#v010-and-the-virus-issue">v0.1.0 and the Virus Issue</a>
-        <a href="/Blog.html?tags=%23dictionfairy#the-state-of-things">The State of Things</a>
-      </div>
-    </div> 
-    <p class="main-text">
-      I built Dictionfairy in Python using PyQt6 to develop the desktop app and Selenium for the webscraping backend. It's a bread-and-butter webscraping project that solves an actual problem that I have, and with the customizable dictionary feature, it should be applicable to anyone who's learning a language or just happens to use a dictionary often. Most of the challenge of this project was scalability. I knew that if I didn't start planning ahead from zero I'd quickly end up with a mess of barely functional component parts. The approach I took was calculated, and I focused on making sure each part of the project had clear pipelines for input and output. This ensured that I could effectively merge everything into a reliable and clean product. The other benefit was how relatively simple it was to allow user configuration for custom dictionaries, where all that's needed is a website link and a hint for what to look for. I've had a great time exploring design principles with this project and look forward to releasing it for language students like myself.
     </p>
+    
   </main>
 </body>
 </html>

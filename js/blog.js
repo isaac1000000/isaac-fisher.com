@@ -1,20 +1,7 @@
 function setupBlogButtons() {
-	// Doesn't display sidebar if javascript is disabled
-	document.querySelector("aside").classList.add("active");
-
-	document.getElementById("exit-tags-button").addEventListener("click", () => {
-		document.querySelector("aside").classList.remove("active");
-	})
-
-	document.getElementById("open-tags-button").addEventListener("click", () => {
-		document.querySelector("aside").classList.add("active");
-	})
-
 	const posts = document.querySelectorAll("article");
-	// Map of all blog posts and their tags
 	const postTags = new Map();
 	posts.forEach((post) => {
-		// Can you tell I write a lot of Python?
 		postTags.set(post.id, [...document.querySelectorAll("#" + post.id + " .tags li")].map(x => x.innerHTML));
 	});
 
@@ -30,7 +17,6 @@ function setupBlogButtons() {
 	var results = posts.length;
 	resultCounter.innerText = generateResultsText(results);
 
-	// Resets all posts, then deletes the ones that don't share a tag with the active tags
 	function handleTagClick() {
 		results = posts.length;
 		posts.forEach(post => {
@@ -39,15 +25,9 @@ function setupBlogButtons() {
 		const activeTags = [...document.querySelectorAll("#tag-menu li button.active")].map(x => x.innerHTML);
 		const appliedCount = document.getElementById("applied-tags-count-label")
 		appliedCount.innerText = activeTags.length > 1 ? `${activeTags.length} tags applied` : activeTags.length === 1 ? '1 tag applied' : ''
-		if (activeTags.length === 0) {
-			appliedCount.style.display = 'none';
-		} else {
-			appliedCount.style.display = 'block';
-		}
 		if (activeTags.length > 0) {
 			results = 0;
 			postTags.forEach((tags, post) => {
-				// Checks if all active tags are in the post's tags. Short circuit for speed
 				if ((tags.length < activeTags.length) || (tags.filter((tag) => activeTags.includes(tag))).length < activeTags.length) {
 					document.querySelector("#"+post).style.display = "none";
 				} else {
@@ -58,7 +38,6 @@ function setupBlogButtons() {
 		resultCounter.innerText = generateResultsText(results);
 	}
 
-	// Get passed tags
 	const urlParams = new URLSearchParams(window.location.search);
 	const passedTags = urlParams.getAll('tags');
 	passedTags.forEach((tag) => {
